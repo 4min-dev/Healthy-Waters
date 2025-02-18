@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary__blue: #0E4194;
+    --primary__green: #229B3C;
+    --primary__dark: #232628;
+    --primary__light-grey: #F9FAFB;
+    --primary__dark-grey: #51585B;
+    --primary__website__color-hex: #008CD3;
+    --primary__website__color-rgb: 0, 160, 224;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Proxima Nova Cond', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Cond';
+    src: url('../public/fonts/ProximaNovaCond-Regular.ttf') format('ttf'),
+        url('../public/fonts/ProximaNovaCond-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Cond';
+    src: url('../public/fonts/ProximaNovaCond-SemiBold.ttf') format('ttf'),
+        url('../public/fonts/ProximaNovaCond-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Cond';
+    src: url('../public/fonts/ProximaNovaCond-Bold.ttf') format('ttf'),
+        url('../public/fonts/ProximaNovaCond-Bold.ttf') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Cond';
+    src: url('../public/fonts/ProximaNovaCond-Extrabld.ttf') format('ttf'),
+        url('../public/fonts/ProximaNovaCond-ExtraBld.ttf') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 82vw;
+}
+
+h1 {
+    font-family: 'Proxima Nova Cond', sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 67.2px;
+    color: var(--primary__dark);
+}
+
+h2 {
+    font-family: 'Proxima Nova Cond', sans-serif;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 57.2px;
+    color: var(--primary__dark)
+}
+
+h5 {
+    font-family: 'Proxima Nova Cond', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    color: var(--primary__dark)
+}
+
+.desk__mini {
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 0%;
+    color: var(--primary__dark);
+    text-decoration: none;
+}
+
+.desk__phone {
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: var(--primary__dark);
+    text-decoration: none;
+}
+
+.desk__advantages {
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: black;
+}
+
+.blue__text {
+    color: var(--primary__blue)
+}
+
+.green__text {
+    color: var(--primary__green)
+}
+
+.text__uppercase {
+    text-transform: uppercase;
+}
+
+strong {
+    font-weight: 800;
+}
+
+.semi__bold {
+    font-weight: 700;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.align__center {
+    align-items: center;
+}
+
+.align__end {
+    align-items: flex-end;
+}
+
+.justify__center {
+    justify-content: center;
+}
+
+.justify__space__between {
+    justify-content: space-between;
+}
+
+header {
+    gap: 8px;
+}
+
+.top__header__panel {
+    gap: 134.69px;
+    padding: 15px 0px 17px 0px;
+}
+
+.top__header__panel__contacts,
+.top__header__website__nav__panel {
+    gap: 24px;
+}
+
+.top__header__panel__contacts__card {
+    gap: 12px;
+}
+
+.top__header__panel__contacts__card__ui__container {
+    gap: 8px;
+    max-width: 500px;
+}
+
+.top__header__panel__tel__container {
+    gap: 16px;
+}
+
+.top__header__panel__tel__container .top__header__panel__contacts__card {
+    gap: 16px;
+}
+
+.top__header__panel__contacts__card,
+.top__header__website__nav__card {
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    background: none;
+    border: none;
+    color: #51585B;
+    white-space: nowrap;
+}
+
+.top__header__panel__contacts__card {
+    color: #232628
+}
+
+.bottom__header__panel {
+    gap: 32px;
+    padding: 8px 0px 16px 0px;
+    border-bottom: 1px solid #D7DDE0;
+    background: white;
+    box-shadow: 0px 6px 40px 0px #0000000F;
+}
+
+.header__ui__container {
+    gap: 8px;
+    width: calc(100% - 525px);
+}
+
+.catalog__header__button {
+    gap: 12px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.catalog__button {
+    border-radius: 36px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    background: var(--primary__website__color-hex);
+    box-shadow: 0px 4px 24px 0px rgba(var(--primary__website__color-rgb), .1);
+    color: var(--primary__light-grey);
+    outline: none;
+    border: none;
+}
+
+.catalog__header__button:not(.catalog__button) {
+    width: fit-content;
+    height: 54px;
+    border-radius: 100px;
+    gap: 12px;
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    color: var(--primary__dark);
+    border: 1px solid #D7DDE0
+}
+
+.search__input__with__button__container {
+    position: relative;
+    height: 54px;
+    width: 100%;
+    border-radius: 100px;
+    padding: 16px 76px 16px 24px;
+    border: 1px solid var(--primary__website__color-hex)
+}
+
+.search__input__with__button__container input {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding-left: 24px;
+    right: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 0%;
+    color: var(--primary__dark)
+}
+
+.search__input__with__button__container button {
+    position: absolute;
+    padding: 16px;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    background: linear-gradient(180deg, #008CD3 0%, #00A0E0 100%);
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+footer {
+    background: var(--primary__light-grey);
+    border-top: 1px solid #E5E6E6;
+    padding: 60px 0px 0px 0px;
+}
+
+.footer__blocks__container {
+    gap: 74px;
+    padding: 0px 214px 0px 211px;
+    margin-bottom: 60px;
+}
+
+.footer__media__blocks__container {
+    gap: 30px;
+}
+
+.footer__media__blocks__container .footer__block:first-child {
+    gap: 52px !important;
+}
+
+.footer__media__blocks__container .footer__contacts__cards {
+    gap: 32px;
+}
+
+.footer__media__blocks__container .footer__contacts__card {
+    gap: 18px;
+}
+
+.footer__media__blocks__container .footer__contacts__card:nth-child(2) {
+    width: 90%;
+}
+
+.footer__blocks__container .footer__block {
+    gap: 32px;
+}
+
+.footer__navbar {
+    list-style: none;
+    gap: 8px;
+}
+
+.mailing__block {
+    width: 382px;
+}
+
+.contacts__block {
+    width: 272px;
+}
+
+.footer_mailing__ui__container {
+    margin-top: 20px;
+    margin-bottom: 28px;
+    width: 100%;
+    gap: 8px;
+}
+
+.footer_mailing__ui__container .phone__container {
+    width: 100%;
+    height: 58px;
+    border-radius: 30px;
+    border-width: 2px;
+    position: relative;
+    border: 2px solid #EEF4F4;
+    background: white;
+}
+
+.footer_mailing__ui__container .phone__container input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-left: 25.71px;
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.8px;
+    letter-spacing: 0%;
+    color: var(--primary__dark);
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.footer_mailing__ui__container .phone__container button {
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    right: 2px;
+    border: none;
+    outline: none;
+    width: 151px;
+    border-radius: 70px;
+    background: var(--primary__blue);
+    border: 1px solid var(--primary__blue);
+    box-shadow: 0px 6px 40px 0px #0000000F;
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+    color: #EEF4F4;
+    cursor: pointer;
+}
+
+.footer_mailing__ui__container .feedback__link {
+    width: 100%;
+    white-space: nowrap;
+    height: 58px;
+    border-radius: 30px;
+    border: 1px solid #D7DDE0;
+    box-shadow: 0px 4px 30px 0px #67E2691F;
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1%;
+    color: var(--primary__dark);
+    text-decoration: none;
+}
+
+.footer__social__media__card {
+    width: 60px;
+    height: 60px;
+    border-radius: 1000px;
+    background: white;
+    border: 1px solid #F9FAFB;
+    box-shadow: 0px 0px 36px 0px #0000000A;
+}
+
+.footer__copyright__container {
+    height: fit-content;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: var(--primary__blue);
+    width: 100%;
+}
+
+.footer__copyright__text {
+    color: var(--primary__light-grey);
+    margin-left: 200px;
+    word-wrap: break-word;
+    width: 730px;
+    display: inline-block;
+}

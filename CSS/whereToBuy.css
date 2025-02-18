@@ -1,0 +1,94 @@
+
+.page__ymap__container {
+    width: 100%;
+    height: 687px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.ymaps-2-1-79-copyrights-pane {
+    display: none;
+}
+
+.page__navigation {
+    list-style: none;
+    gap: 16px;
+}
+
+.page__navigation .page__navigation__link a {
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 0%;
+    color: var(--primary__dark);
+    text-decoration: none;
+}
+
+.page__navigation .page__navigation__link:not(:first-child):not(:last-child)::after {
+    position: relative;
+    content: '/';
+    display: inline-block;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--primary__dark);
+    margin-left: 10px;
+}
+
+.page__navigation .page__navigation__link:first-child::after {
+    position: relative;
+    content: '/';
+    display: inline-block;
+    font-family: "Roboto", serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--primary__dark);
+    margin-left: 10px;
+}
+
+#where__to__buy__container {
+    margin-top: 26px;
+}
+
+#where__to__buy__container .page__title__container {
+    gap: 6px;
+}
+
+#where__to__buy__container .page__ymap__container {
+    margin-top: 60px;
+}
+
+.offices__navbar__block__container {
+    margin-top: 90px;
+    gap: 60px;
+    margin-bottom: 122px;
+}
+
+.offices__navbar__container {
+    height: fit-content;
+    gap: 30px;
+    width: 100%;
+}
+
+.offices__navbar {
+    gap: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.offices__navbar li a {
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: var(--primary__dark-grey);
+    text-decoration: none;
+}
+
+.offices__navbar li.active a {
+    color: var(--primary__website__color-hex)
+}
