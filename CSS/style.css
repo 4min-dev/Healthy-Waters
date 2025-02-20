@@ -3,28 +3,12 @@
 :root {
     --primary__blue: #0E4194;
     --primary__green: #229B3C;
+    --primary__dark-green: #3EB960;
     --primary__dark: #232628;
     --primary__light-grey: #F9FAFB;
     --primary__dark-grey: #51585B;
     --primary__website__color-hex: #008CD3;
     --primary__website__color-rgb: 0, 160, 224;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Proxima Nova Cond', sans-serif;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #333;
-    background-color: #fff;
 }
 
 @font-face {
@@ -59,6 +43,23 @@ body {
     font-style: normal;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Proxima Nova Cond', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -67,9 +68,21 @@ img {
 
 main {
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 82vw;
+}
+
+@media (min-width:1025px) {
+    main {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 82vw;
+    }
+}
+
+@media (max-width:1024px) {
+    main {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }
 
 h1 {
@@ -95,6 +108,18 @@ h5 {
     line-height: 26px;
     letter-spacing: 0%;
     color: var(--primary__dark)
+}
+
+@media (min-width:1025px) {
+    .adaptive {
+        display: none !important;
+    }
+}
+
+@media (max-width:1024px) {
+    .desktop {
+        display: none !important;
+    }
 }
 
 .desk__mini {
@@ -341,10 +366,6 @@ footer {
     gap: 18px;
 }
 
-.footer__media__blocks__container .footer__contacts__card:nth-child(2) {
-    width: 90%;
-}
-
 .footer__blocks__container .footer__block {
     gap: 32px;
 }
@@ -456,4 +477,638 @@ footer {
     word-wrap: break-word;
     width: 730px;
     display: inline-block;
+}
+
+.floating__navbar {
+    position: absolute;
+    top: 408px;
+    right: 51px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    gap: 30px;
+}
+
+.floating__navbar__card {
+    position: relative;
+    width: 70px;
+    height: 72px;
+    border-radius: 24px;
+    background: #FFFFFF;
+    border: 1px solid var(--primary__light-grey);
+    box-shadow: 0px 6px 40px 0px #0000000F;
+}
+
+.floating__navbar__numb__value {
+    position: absolute;
+    right: -7px;
+    top: -2px;
+    width: 24px;
+    height: 24px;
+    padding: 4px 4px 3px 3px;
+    background: var(--primary__dark-green);
+    border-radius: 1000px;
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    color: #EEF4F4;
+}
+
+.top__header__panel.adaptive {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.top__header__panel.adaptive .top__header__panel__logo__container {
+    gap: 12px;
+}
+
+.mob__burger__menu__button {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.top__header__panel__navbar__container {
+    gap: 24px;
+}
+
+.top__header__panel__mob__button {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.top__header__panel__mob__button.cart__button {
+    position: relative;
+}
+
+.top__header__panel__mob__button.cart__button .cart__value {
+    position: absolute;
+    border: 1px solid #FFFFFF;
+    background: #3EB960;
+    border-radius: 1000px;
+    width: 10px;
+    height: 10px;
+    top: -1.5px;
+    right: -7.3px;
+    font-family: "Nunito Sans", serif !important;
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 7.2px;
+    letter-spacing: 0%;
+    color: var(--primary__light-grey)
+}
+
+@media (min-width:1025px) {
+    .bottom__header__panel {
+        gap: 32px;
+        padding: 8px 0px 16px 0px;
+        border-bottom: 1px solid #D7DDE0;
+        background: white;
+        box-shadow: 0px 6px 40px 0px #0000000F;
+    }
+
+    .header__ui__container {
+        gap: 8px;
+        width: calc(100% - 525px);
+    }
+
+    .catalog__header__button {
+        gap: 12px;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 18px;
+        text-transform: uppercase;
+        text-decoration: none;
+        white-space: nowrap;
+        cursor: pointer;
+    }
+
+    .catalog__button {
+        border-radius: 36px;
+        padding-top: 16px;
+        padding-right: 24px;
+        padding-bottom: 16px;
+        padding-left: 24px;
+        background: var(--primary__website__color-hex);
+        box-shadow: 0px 4px 24px 0px rgba(var(--primary__website__color-rgb), .1);
+        color: var(--primary__light-grey);
+        outline: none;
+        border: none;
+    }
+
+    .catalog__header__button:not(.catalog__button) {
+        width: fit-content;
+        height: 54px;
+        border-radius: 100px;
+        gap: 12px;
+        padding-top: 20px;
+        padding-right: 24px;
+        padding-bottom: 20px;
+        padding-left: 24px;
+        color: var(--primary__dark);
+        border: 1px solid #D7DDE0
+    }
+
+    .search__input__with__button__container {
+        position: relative;
+        height: 54px;
+        width: 100%;
+        border-radius: 100px;
+        padding: 16px 76px 16px 24px;
+        border: 1px solid var(--primary__website__color-hex)
+    }
+
+    .search__input__with__button__container input {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        padding-left: 24px;
+        right: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        font-family: "Nunito Sans", serif !important;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21.6px;
+        letter-spacing: 0%;
+        color: var(--primary__dark)
+    }
+
+    .search__input__with__button__container button {
+        position: absolute;
+        padding: 16px;
+        border-radius: 100px;
+        outline: none;
+        border: none;
+        background: linear-gradient(180deg, #008CD3 0%, #00A0E0 100%);
+        right: 3px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    footer {
+        background: var(--primary__light-grey);
+        border-top: 1px solid #E5E6E6;
+        padding: 60px 0px 0px 0px;
+    }
+
+    .footer__blocks__container {
+        gap: 74px;
+        padding: 0px 214px 0px 211px;
+        margin-bottom: 60px;
+    }
+
+    .footer__media__blocks__container {
+        gap: 30px;
+    }
+
+    .footer__media__blocks__container .footer__block:first-child {
+        gap: 52px !important;
+    }
+
+    .footer__media__blocks__container .footer__contacts__cards {
+        gap: 32px;
+    }
+
+    .footer__media__blocks__container .footer__contacts__card {
+        gap: 18px;
+    }
+
+    .footer__media__blocks__container .footer__contacts__card:nth-child(2) {
+        width: 90%;
+    }
+
+    .footer__blocks__container .footer__block {
+        gap: 32px;
+    }
+
+    .footer__navbar {
+        list-style: none;
+        gap: 8px;
+    }
+
+    .mailing__block {
+        width: 382px;
+    }
+
+    .contacts__block {
+        width: 272px;
+    }
+
+    .footer_mailing__ui__container {
+        margin-top: 20px;
+        margin-bottom: 28px;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .footer_mailing__ui__container .phone__container {
+        width: 100%;
+        height: 58px;
+        border-radius: 30px;
+        border-width: 2px;
+        position: relative;
+        border: 2px solid #EEF4F4;
+        background: white;
+    }
+
+    .footer_mailing__ui__container .phone__container input {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        padding-left: 25.71px;
+        font-family: "Nunito Sans", serif !important;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.8px;
+        letter-spacing: 0%;
+        color: var(--primary__dark);
+        border: none;
+        outline: none;
+        background: none;
+    }
+
+    .footer_mailing__ui__container .phone__container button {
+        position: absolute;
+        top: 2px;
+        bottom: 2px;
+        right: 2px;
+        border: none;
+        outline: none;
+        width: 151px;
+        border-radius: 70px;
+        background: var(--primary__blue);
+        border: 1px solid var(--primary__blue);
+        box-shadow: 0px 6px 40px 0px #0000000F;
+        font-family: "Nunito Sans", serif !important;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 18px;
+        color: #EEF4F4;
+        cursor: pointer;
+    }
+
+    .footer_mailing__ui__container .feedback__link {
+        width: 100%;
+        white-space: nowrap;
+        height: 58px;
+        border-radius: 30px;
+        border: 1px solid #D7DDE0;
+        box-shadow: 0px 4px 30px 0px #67E2691F;
+        font-family: "Nunito Sans", serif !important;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 1%;
+        color: var(--primary__dark);
+        text-decoration: none;
+    }
+
+    .footer__social__media__card {
+        width: 60px;
+        height: 60px;
+        border-radius: 1000px;
+        background: white;
+        border: 1px solid #F9FAFB;
+        box-shadow: 0px 0px 36px 0px #0000000A;
+    }
+
+    .footer__copyright__container {
+        height: fit-content;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        background: var(--primary__blue);
+        width: 100%;
+    }
+
+    .footer__copyright__text {
+        color: var(--primary__light-grey);
+        margin-left: 200px;
+        word-wrap: break-word;
+        width: 730px;
+        display: inline-block;
+    }
+
+    .floating__navbar {
+        position: absolute;
+        top: 408px;
+        right: 51px;
+        transition: all 0.3s ease;
+        z-index: 1000;
+        gap: 30px;
+    }
+
+    .floating__navbar__card {
+        position: relative;
+        width: 70px;
+        height: 72px;
+        border-radius: 24px;
+        background: #FFFFFF;
+        border: 1px solid var(--primary__light-grey);
+        box-shadow: 0px 6px 40px 0px #0000000F;
+    }
+
+    .floating__navbar__numb__value {
+        position: absolute;
+        right: -7px;
+        top: -2px;
+        width: 24px;
+        height: 24px;
+        padding: 4px 4px 3px 3px;
+        background: var(--primary__dark-green);
+        border-radius: 1000px;
+        font-family: "Nunito Sans", serif !important;
+        font-weight: 400;
+        font-size: 14px;
+        color: #EEF4F4;
+    }
+
+    .top__header__panel.adaptive {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top__header__panel.adaptive .top__header__panel__logo__container {
+        gap: 12px;
+    }
+
+    .mob__burger__menu__button {
+        outline: none;
+        border: none;
+        background: none;
+    }
+
+    .top__header__panel__navbar__container {
+        gap: 24px;
+    }
+
+    .top__header__panel__mob__button {
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    .top__header__panel__mob__button.cart__button {
+        position: relative;
+    }
+
+    .top__header__panel__mob__button.cart__button .cart__value {
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        background: #3EB960;
+        border-radius: 1000px;
+        width: 10px;
+        height: 10px;
+        top: -1.5px;
+        right: -7.3px;
+        font-family: "Nunito Sans", serif !important;
+        font-weight: 400;
+        font-size: 6px;
+        line-height: 7.2px;
+        letter-spacing: 0%;
+        color: var(--primary__light-grey)
+    }
+}
+
+@media (max-width:1024px) {
+    h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+    h5 {
+        font-size: 15px;
+        line-height: 18.27px;
+    }
+
+    .bottom__header__panel {
+        padding: 8px 14.5px 8px 14.5px;
+        border-top: .5px solid #D7DDE0;
+        border-bottom: none;
+    }
+
+    .header__ui__container {
+        gap: 8px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .catalog__header__button {
+        gap: 8px;
+        font-size: 8px;
+    }
+
+    .catalog__button {
+        padding: 6px 10px;
+    }
+
+    .catalog__header__button:not(.catalog__button) {
+        height: 30px;
+        gap: 8px;
+        padding: 6px 8px;
+        border: .5px solid #D7DDE0
+    }
+
+    .footer__blocks__container {
+        margin-bottom: 30px;
+        padding: 0px !important;
+    }
+
+    .footer__media__blocks__container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .footer__media__blocks__container .footer__contacts__cards {
+        gap: 24px;
+    }
+
+    .footer__media__blocks__container .footer__contacts__card {
+        gap: 8px;
+    }
+
+    .footer__blocks__container .footer__block {
+        gap: 24px;
+    }
+
+    .contacts__block {
+        width: 186px;
+    }
+
+    .mailing__block {
+        padding: 0px 16px;
+        width: fit-content;
+    }
+
+    .footer_mailing__ui__container {
+        margin-top: 24px;
+        margin-bottom: 24px;
+        gap: 24px;
+    }
+
+    .footer_mailing__ui__container .phone__container {
+        height: 35px;
+        gap: 8px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer_mailing__ui__container .phone__container input {
+        padding-left: 10.2px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13.2px;
+        letter-spacing: -4%;
+    }
+
+    .footer_mailing__ui__container .phone__container button {
+        width: 105px;
+        height: 100%;
+        font-size: 8px;
+    }
+
+    .footer_mailing__ui__container .feedback__link {
+        height: 30px;
+        font-size: 8px;
+    }
+
+    .footer__social__media__card {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer__copyright__container {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .footer__copyright__text {
+        margin-left: 16px;
+        margin-right: 16px;
+        font-weight: 400;
+        font-size: 8px !important;
+        line-height: 9.6px !important;
+        letter-spacing: 0%;
+
+        width: fit-content;
+    }
+
+    .top__header__panel.adaptive {
+        padding-left: 16px;
+        padding-right: 16px;
+        gap:0px !important;
+    }
+
+    .top__header__panel.adaptive .top__header__panel__logo__container {
+        gap: 12px;
+    }
+
+    .mob__burger__menu__button {
+        outline: none;
+        border: none;
+        background: none;
+    }
+
+    .top__header__panel__navbar__container {
+        gap: 24px;
+    }
+
+    .top__header__panel__mob__button {
+        background: none;
+        outline: none;
+        border: none;
+    }
+
+    .top__header__panel__mob__button.cart__button {
+        position: relative;
+    }
+
+    .top__header__panel__mob__button.cart__button .cart__value {
+        position: absolute;
+        border: 1px solid #FFFFFF;
+        background: #3EB960;
+        border-radius: 1000px;
+        min-width: 10px;
+        min-height: 10px;
+        width: fit-content;
+        height: fit-content;
+        top: -1.5px;
+        right: -7.3px;
+        font-family: "Nunito Sans", serif !important;
+        font-weight: 400;
+        font-size: 6px;
+        line-height: 8px;
+        letter-spacing: 0%;
+        color: var(--primary__light-grey);
+        padding-right: .5px;
+    }
+
+    .mob__footer__navigation {
+        list-style: none;
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .mob__footer__navigation li {
+        font-family: "Nunito Sans", serif !important;
+        font-weight: 800;
+        font-size: 8px;
+        line-height: 18px;
+        letter-spacing: 1%;
+    }
+
+    .mob__footer__navigation li a {
+        color: var(--primary__dark);
+        text-decoration: none;
+    }
+
+    .mob__footer__navigation li.active a {
+        color: #229B3C
+    }
+
+    .footer__block {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__contacts__card {
+        justify-content: center;
+        text-align: right;
+    }
+
+    .footer__contacts__card span {
+        max-width: 56%;
+    }
+
+    .desk__phone {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 13.2px;
+    }
+
+    .desk__mini {
+        font-size: 12px;
+        line-height: 13.2px;
+    }
+
+    .footer__social__media__container {
+        width: 100%;
+    }
 }

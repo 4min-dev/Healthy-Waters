@@ -1,3 +1,5 @@
+import isMobileDevice from "./isMobileDevice.js"
+
 ymaps.ready(init)
 
 function init() {
@@ -6,6 +8,11 @@ function init() {
         zoom: 10,
         controls: ['zoomControl', 'searchControl']
     })
+
+    if(isMobileDevice()) {
+        myMap.controls.remove('searchControl')
+        myMap.controls.remove('zoomControl')
+    }
 
     const searchControl = myMap.controls.get('searchControl')
     searchControl.options.set({
