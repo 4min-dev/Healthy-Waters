@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=98b59681-9c41-48b3-b1c9-ead9c40b54a8"></script>
     <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/contacts.css">
+    <link rel="stylesheet" href="/CSS/pay.css">
     <title>Contacts</title>
 </head>
 
@@ -381,294 +380,393 @@
         </div>
     </header>
 
-    <main class="flex column" id="contacts__page__container">
+    <main class="flex column" id="pay__page__container">
         <div class="page__title__container flex column">
             <ul class="page__navigation flex align__center">
                 <li class="page__navigation__link">
                     <a href="#">Главная</a>
                 </li>
                 <li class="page__navigation__link">
-                    <a href="#">Контакты</a>
+                    <a href="#">Условия возврата</a>
                 </li>
             </ul>
 
             <span class="page__title">
-                <h1>Контакты</h1>
+                <h1>Условия возврата</h1>
             </span>
         </div>
 
-        <div class="contact__cards__container flex flex__wrap">
-            <div class="contacts__card flex">
-                <div class="contacts__card__icon flex align__center justify__center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M8.33087 8.22365C8.62298 8.02891 8.79844 7.70107 8.79844 7.35V3.15C8.79844 1.4103 7.38813 0 5.64844 0H1.44844C0.868538 0 0.398438 0.470101 0.398438 1.05C0.398438 11.4882 9.91025 21 20.3484 21C20.9283 21 21.3984 20.5299 21.3984 19.95V15.75C21.3984 14.0103 19.9881 12.6 18.2484 12.6H14.0484C13.6974 12.6 13.3695 12.7755 13.1748 13.0676L11.1742 16.0685C8.9952 14.6596 7.08615 12.7986 5.61771 10.6564L5.32995 10.2243L8.33087 8.22365ZM14.6184 14.699H18.2564C18.8363 14.699 19.3064 15.1691 19.3064 15.749V18.8626C17.2723 18.7218 15.2872 18.1778 13.4356 17.3151L13.0107 17.1104L14.6184 14.699ZM12.9943 4.19897C15.3139 4.19897 17.1943 6.07938 17.1943 8.39897C17.1943 8.97887 16.7242 9.44897 16.1443 9.44897C15.6059 9.44897 15.1621 9.04363 15.1014 8.52143L15.0886 8.24225C15.0084 7.15565 14.1014 6.29897 12.9943 6.29897C12.4144 6.29897 11.9443 5.82887 11.9443 5.24897C11.9443 4.66908 12.4144 4.19897 12.9943 4.19897ZM12.9943 0C17.6335 0 21.3943 3.76081 21.3943 8.4C21.3943 8.9799 20.9242 9.45 20.3443 9.45C19.7644 9.45 19.2943 8.9799 19.2943 8.4C19.2943 4.92061 16.4737 2.1 12.9943 2.1C12.4144 2.1 11.9443 1.6299 11.9443 1.05C11.9443 0.470101 12.4144 0 12.9943 0ZM5.64484 2.10205C6.22474 2.10205 6.69484 2.57215 6.69484 3.15205V6.79011L4.28339 8.39774C3.30211 6.42642 2.68283 4.29262 2.53125 2.10205H5.64484Z"
-                            fill="url(#paint0_linear_8491_52190)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_8491_52190" x1="10.8984" y1="0" x2="10.8984" y2="21"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#008CD3" />
-                                <stop offset="1" stop-color="#00A0E0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-
-                <div class="contacts__card__text__container flex column">
-                    <h3>Телефон по России</h3>
-
-                    <div class="contacts__card__description__container flex column">
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">+7 800 100 15 15</span>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12 0.83284C12 1.0035 11.9347 1.17417 11.8047 1.30417L6.47141 6.63743C6.21075 6.89809 5.78942 6.89809 5.52876 6.63743L0.195497 1.30417C-0.0651658 1.0435 -0.0651658 0.622176 0.195497 0.361513C0.45616 0.10085 0.877488 0.10085 1.13815 0.361513L6.00008 5.22344L10.862 0.361513C11.1227 0.10085 11.544 0.10085 11.8047 0.361513C11.9347 0.491511 12 0.662175 12 0.83284Z"
-                                    fill="#51585B" />
-                            </svg>
-
+        <div class="pay__page__content flex">
+            <div class="flex column">
+                <div class="pay__page__variables__container flex column">
+                    <div class="pay__page__variable__card flex column">
+                        <span class="pay__page__variable__title">
+                            <h3>Продовольственные товары
+                                не подлежащие возврату и обмену</h3>
+                        </span>
+                        <div class="pay__page__variable__content flex">
+                            <span class="pay__page__variable__description desk__txt">
+                                Согласно ст. 18 и 25 Закон РФ от 07.02.1992 N 2300-1 "О защите прав потребителей" любые
+                                продовольственные товары нельзя вернуть в магазин, если они надлежащего качества и срок
+                                их годности в момент приобретения не истёк. Под надлежащим качеством в данном случае
+                                подразумеваются продукты, имеющие нормальный внешний вид и изготовленные в соответствии
+                                с действующими стандартами.
+                            </span>
                         </div>
+                    </div>
 
+                    <div class="pay__page__variable__card flex column">
+                        <span class="pay__page__variable__title">
+                            <h3>Обмен непродовольственного товара надлежащего качества</h3>
+                        </span>
+                        <div class="pay__page__variable__content flex">
+                            <span class="pay__page__variable__description desk__txt flex column">
+                                Потребитель вправе обменять непродовольственный товар надлежащего качества на
+                                аналогичный товар у продавца, у которого этот товар был приобретен, если указанный товар
+                                не подошел по форме, габаритам, фасону, расцветке, размеру или комплектации.
+                                <span>
+                                    Потребитель имеет право на обмен непродовольственного товара надлежащего качества в
+                                    течение четырнадцати дней, не считая дня его покупки.
+                                    Оплата происходит через ПАО СБЕРБАНК с использованием Банковских
+                                    Обмен непродовольственного товара надлежащего качества проводится, если указанный
+                                    товар не был в употреблении, сохранены его товарный вид, потребительские свойства,
+                                    пломбы, фабричные ярлыки, а также имеется товарный чек или кассовый чек либо иной
+                                    подтверждающий оплату указанного товара документ. Отсутствие у потребителя товарного
+                                    чека или кассового чека либо иного подтверждающего оплату товара документа не лишает
+                                    его возможности ссылаться на свидетельские показания.</span>
+                            </span>
+                        </div>
+                    </div>
 
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">бесплатно по России</span>
+                    <div class="pay__page__variable__card flex column">
+                        <span class="pay__page__variable__title">
+                            <h3>Список «непродовольственных» товаров,
+                                не подлежащих возврату и обмену</h3>
+                        </span>
+                        <div class="pay__page__variable__content flex column">
+                            <span class="desk__txt">
+                                Товары, относящиеся к категории «непродовольственные», вернуть можно, но только те,
+                                которые
+                                не входят в список не подлежащих возврату. Постановлением N55 от 19.01.98 установлен
+                                следующий перечень изделий, вернуть которые нельзя даже в течение 14 суток (при условии,
+                                что
+                                они качественные):
+                            </span>
+
+                            <ul class="aqua__marker flex column">
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+
+                                <li class="desk__txt">
+                                    косметические средства и парфюмерия;
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="pay__page__variable__card flex column">
+                        <span class="pay__page__variable__title">
+                            <h3>Права потребителя при обнаружении в товаре недостатков</h3>
+                        </span>
+                        <div class="pay__page__variable__content flex column">
+                            <span class="desk__txt">
+                                Согласно ст. 18 Закона РФ от 07.02.1992 N 2300-1 "О защите прав потребителей"
+                                Потребитель в случае обнаружения в товаре недостатков, если они не были оговорены
+                                продавцом,
+                                по своему выбору вправе:
+                            </span>
+
+                            <ul class="aqua__marker flex column">
+                                <li class="desk__txt">
+                                    потребовать замены на товар этой же марки (этих же модели и (или) артикула);
+                                </li>
+
+                                <li class="desk__txt">
+                                    потребовать замены на товар этой же марки (этих же модели и (или) артикула);
+                                </li>
+
+                                <li class="desk__txt">
+                                    потребовать замены на товар этой же марки (этих же модели и (или) артикула);
+                                </li>
+
+                                <li class="desk__txt">
+                                    потребовать замены на товар этой же марки (этих же модели и (или) артикула);
+                                </li>
+
+                                <li class="desk__txt">
+                                    потребовать замены на товар этой же марки (этих же модели и (или) артикула);
+                                </li>
+                            </ul>
+
+                            <span class="desk__txt">
+                                По требованию продавца и за его счет потребитель должен возвратить товар с недостатками.
+                                Потребитель вправе предъявить предусмотренные статьей 18 Закона РФ от 07.02.1992 N
+                                2300-1 "О защите прав потребителей" требования к продавцу (изготовителю, уполномоченной
+                                организации или уполномоченному индивидуальному предпринимателю, импортеру) в отношении
+                                недостатков товара, если они обнаружены в течение гарантийного срока или срока годности.
+                            </span>
+
+                            <span class="desk__txt">
+                                В отношении товара, на который установлен гарантийный срок, продавец (изготовитель),
+                                уполномоченная организация или уполномоченный индивидуальный предприниматель, импортер
+                                не отвечает за недостатки товара, которые возникли после передачи товара потребителю
+                                вследствие нарушения потребителем правил использования, хранения или транспортировки
+                                товара, действий третьих лиц или непреодолимой силы.
+                            </span>
+
+                            <span class="desk__txt">
+                                Интернет-магазин Воды Здоровья готов предложить обмен/возврат товара, а также денежных
+                                средств в случаях, порядке и при наличии оснований прямо предусмотренных Законом №
+                                2300-I «О защите прав потребителей» от 1992 года 7 февраля в срок не превышающий 30
+                                календарных дней с момента обращения Покупателя.
+                            </span>
+
+                            <span class="desk__txt">
+                                Если заказ был сделан за наличные денежные средства, то при возврате товара, денежные
+                                средства передает курьер.
+                                Если заказ был оплачен по безналичному расчёту, то возврат безналичных денежных средств,
+                                производится на Ваш банковский счет в течение 3—30 рабочих дней (срок зависит от Банка,
+                                который выдал Вашу банковскую карту).
+                            </span>
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
-            <div class="contacts__card flex">
-                <div class="contacts__card__icon flex align__center justify__center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M8.33087 8.22365C8.62298 8.02891 8.79844 7.70107 8.79844 7.35V3.15C8.79844 1.4103 7.38813 0 5.64844 0H1.44844C0.868538 0 0.398438 0.470101 0.398438 1.05C0.398438 11.4882 9.91025 21 20.3484 21C20.9283 21 21.3984 20.5299 21.3984 19.95V15.75C21.3984 14.0103 19.9881 12.6 18.2484 12.6H14.0484C13.6974 12.6 13.3695 12.7755 13.1748 13.0676L11.1742 16.0685C8.9952 14.6596 7.08615 12.7986 5.61771 10.6564L5.32995 10.2243L8.33087 8.22365ZM14.6184 14.699H18.2564C18.8363 14.699 19.3064 15.1691 19.3064 15.749V18.8626C17.2723 18.7218 15.2872 18.1778 13.4356 17.3151L13.0107 17.1104L14.6184 14.699ZM12.9943 4.19897C15.3139 4.19897 17.1943 6.07938 17.1943 8.39897C17.1943 8.97887 16.7242 9.44897 16.1443 9.44897C15.6059 9.44897 15.1621 9.04363 15.1014 8.52143L15.0886 8.24225C15.0084 7.15565 14.1014 6.29897 12.9943 6.29897C12.4144 6.29897 11.9443 5.82887 11.9443 5.24897C11.9443 4.66908 12.4144 4.19897 12.9943 4.19897ZM12.9943 0C17.6335 0 21.3943 3.76081 21.3943 8.4C21.3943 8.9799 20.9242 9.45 20.3443 9.45C19.7644 9.45 19.2943 8.9799 19.2943 8.4C19.2943 4.92061 16.4737 2.1 12.9943 2.1C12.4144 2.1 11.9443 1.6299 11.9443 1.05C11.9443 0.470101 12.4144 0 12.9943 0ZM5.64484 2.10205C6.22474 2.10205 6.69484 2.57215 6.69484 3.15205V6.79011L4.28339 8.39774C3.30211 6.42642 2.68283 4.29262 2.53125 2.10205H5.64484Z"
-                            fill="url(#paint0_linear_8491_52190)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_8491_52190" x1="10.8984" y1="0" x2="10.8984" y2="21"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#008CD3" />
-                                <stop offset="1" stop-color="#00A0E0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
+            <div class="recommendation__cards__container flex column">
+                <div class="recommendation__cards__text__container align__center flex column">
+                    <h3>Рекомендуемые товары</h3>
+                    <a href="#" class="recommendation__cards__description text__uppercase">
+                        весь каталог
+                    </a>
                 </div>
 
-                <div class="contacts__card__text__container flex column">
-                    <h3>Телефон по России</h3>
+                <div class="recommendation__card flex column">
+                    <span class="recommendation__card__tag">
+                        хит продаж
+                    </span>
 
-                    <div class="contacts__card__description__container flex column">
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">+7 800 100 15 15</span>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12 0.83284C12 1.0035 11.9347 1.17417 11.8047 1.30417L6.47141 6.63743C6.21075 6.89809 5.78942 6.89809 5.52876 6.63743L0.195497 1.30417C-0.0651658 1.0435 -0.0651658 0.622176 0.195497 0.361513C0.45616 0.10085 0.877488 0.10085 1.13815 0.361513L6.00008 5.22344L10.862 0.361513C11.1227 0.10085 11.544 0.10085 11.8047 0.361513C11.9347 0.491511 12 0.662175 12 0.83284Z"
-                                    fill="#51585B" />
-                            </svg>
-
+                    <div class="recommendation__card__content flex column">
+                        <div class="recommendation__card__preview">
+                            <img src="/static/images/water.png" alt="Минеральная вода стэлмас магний" />
                         </div>
 
+                        <div class="recommendation__card__text__container flex column">
+                            <span class="recommendation__card__title">
+                                <h5>Mинеральная вода стэлмас магний / stelmas mg (газ)</h5>
+                            </span>
+                            <a href="#" class="recommendation__card__rating__container flex align__center">
+                                <div class="recommendation__card__rating__stars__preview">
+                                    <img src="/static/images/star.png" alt="4.5 рейтинг" />
+                                </div>
 
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">бесплатно по России</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                <span class="desk__txt rating__link">
+                                    20 отзывов
+                                </span>
+                            </a>
 
-            <div class="contacts__card flex">
-                <div class="contacts__card__icon flex align__center justify__center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M8.33087 8.22365C8.62298 8.02891 8.79844 7.70107 8.79844 7.35V3.15C8.79844 1.4103 7.38813 0 5.64844 0H1.44844C0.868538 0 0.398438 0.470101 0.398438 1.05C0.398438 11.4882 9.91025 21 20.3484 21C20.9283 21 21.3984 20.5299 21.3984 19.95V15.75C21.3984 14.0103 19.9881 12.6 18.2484 12.6H14.0484C13.6974 12.6 13.3695 12.7755 13.1748 13.0676L11.1742 16.0685C8.9952 14.6596 7.08615 12.7986 5.61771 10.6564L5.32995 10.2243L8.33087 8.22365ZM14.6184 14.699H18.2564C18.8363 14.699 19.3064 15.1691 19.3064 15.749V18.8626C17.2723 18.7218 15.2872 18.1778 13.4356 17.3151L13.0107 17.1104L14.6184 14.699ZM12.9943 4.19897C15.3139 4.19897 17.1943 6.07938 17.1943 8.39897C17.1943 8.97887 16.7242 9.44897 16.1443 9.44897C15.6059 9.44897 15.1621 9.04363 15.1014 8.52143L15.0886 8.24225C15.0084 7.15565 14.1014 6.29897 12.9943 6.29897C12.4144 6.29897 11.9443 5.82887 11.9443 5.24897C11.9443 4.66908 12.4144 4.19897 12.9943 4.19897ZM12.9943 0C17.6335 0 21.3943 3.76081 21.3943 8.4C21.3943 8.9799 20.9242 9.45 20.3443 9.45C19.7644 9.45 19.2943 8.9799 19.2943 8.4C19.2943 4.92061 16.4737 2.1 12.9943 2.1C12.4144 2.1 11.9443 1.6299 11.9443 1.05C11.9443 0.470101 12.4144 0 12.9943 0ZM5.64484 2.10205C6.22474 2.10205 6.69484 2.57215 6.69484 3.15205V6.79011L4.28339 8.39774C3.30211 6.42642 2.68283 4.29262 2.53125 2.10205H5.64484Z"
-                            fill="url(#paint0_linear_8491_52190)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_8491_52190" x1="10.8984" y1="0" x2="10.8984" y2="21"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#008CD3" />
-                                <stop offset="1" stop-color="#00A0E0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-
-                <div class="contacts__card__text__container flex column">
-                    <h3>Телефон по России</h3>
-
-                    <div class="contacts__card__description__container flex column">
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">+7 800 100 15 15</span>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12 0.83284C12 1.0035 11.9347 1.17417 11.8047 1.30417L6.47141 6.63743C6.21075 6.89809 5.78942 6.89809 5.52876 6.63743L0.195497 1.30417C-0.0651658 1.0435 -0.0651658 0.622176 0.195497 0.361513C0.45616 0.10085 0.877488 0.10085 1.13815 0.361513L6.00008 5.22344L10.862 0.361513C11.1227 0.10085 11.544 0.10085 11.8047 0.361513C11.9347 0.491511 12 0.662175 12 0.83284Z"
-                                    fill="#51585B" />
-                            </svg>
-
+                            <span class="recommendation__card__dscription desk__txt">
+                                Клетки, получая энергию этой воды, медленнее изнашиваются, получают больше энергии.
+                            </span>
                         </div>
 
+                        <div class="recommendation__card__types__container flex column">
+                            <div class="recommendation__card__type flex align__center justify__space__between">
+                                <span class="recommendation__card__type__title desk__mini flex column">
+                                    <span>0,5 л. ПЭТ, 12 шт/уп</span>
+                                    <span>450р/бутылка</span>
+                                </span>
 
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">бесплатно по России</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                <div class="recommendation__card__type__amount__container flex align__center">
+                                    <button type="button"
+                                        class="remove__quantity__button flex align__center justify__center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2"
+                                            fill="none">
+                                            <path d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
+                                                fill="#232628" />
+                                        </svg>
+                                    </button>
 
-            <div class="contacts__card flex">
-                <div class="contacts__card__icon flex align__center justify__center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M8.33087 8.22365C8.62298 8.02891 8.79844 7.70107 8.79844 7.35V3.15C8.79844 1.4103 7.38813 0 5.64844 0H1.44844C0.868538 0 0.398438 0.470101 0.398438 1.05C0.398438 11.4882 9.91025 21 20.3484 21C20.9283 21 21.3984 20.5299 21.3984 19.95V15.75C21.3984 14.0103 19.9881 12.6 18.2484 12.6H14.0484C13.6974 12.6 13.3695 12.7755 13.1748 13.0676L11.1742 16.0685C8.9952 14.6596 7.08615 12.7986 5.61771 10.6564L5.32995 10.2243L8.33087 8.22365ZM14.6184 14.699H18.2564C18.8363 14.699 19.3064 15.1691 19.3064 15.749V18.8626C17.2723 18.7218 15.2872 18.1778 13.4356 17.3151L13.0107 17.1104L14.6184 14.699ZM12.9943 4.19897C15.3139 4.19897 17.1943 6.07938 17.1943 8.39897C17.1943 8.97887 16.7242 9.44897 16.1443 9.44897C15.6059 9.44897 15.1621 9.04363 15.1014 8.52143L15.0886 8.24225C15.0084 7.15565 14.1014 6.29897 12.9943 6.29897C12.4144 6.29897 11.9443 5.82887 11.9443 5.24897C11.9443 4.66908 12.4144 4.19897 12.9943 4.19897ZM12.9943 0C17.6335 0 21.3943 3.76081 21.3943 8.4C21.3943 8.9799 20.9242 9.45 20.3443 9.45C19.7644 9.45 19.2943 8.9799 19.2943 8.4C19.2943 4.92061 16.4737 2.1 12.9943 2.1C12.4144 2.1 11.9443 1.6299 11.9443 1.05C11.9443 0.470101 12.4144 0 12.9943 0ZM5.64484 2.10205C6.22474 2.10205 6.69484 2.57215 6.69484 3.15205V6.79011L4.28339 8.39774C3.30211 6.42642 2.68283 4.29262 2.53125 2.10205H5.64484Z"
-                            fill="url(#paint0_linear_8491_52190)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_8491_52190" x1="10.8984" y1="0" x2="10.8984" y2="21"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#008CD3" />
-                                <stop offset="1" stop-color="#00A0E0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
+                                    <span class="current__quantity__value desk__mini">
+                                        1
+                                    </span>
 
-                <div class="contacts__card__text__container flex column">
-                    <h3>Телефон по России</h3>
+                                    <button type="button"
+                                        class="add__quantity__button flex align__center justify__center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <path
+                                                d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
+                                                fill="#232628" />
+                                        </svg>
+                                    </button>
+                                </div>
 
-                    <div class="contacts__card__description__container flex column">
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">+7 800 100 15 15</span>
+                                <span class="recommendation__card__type__total__price desk__mini">
+                                    450 ₽
+                                </span>
+                            </div>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12 0.83284C12 1.0035 11.9347 1.17417 11.8047 1.30417L6.47141 6.63743C6.21075 6.89809 5.78942 6.89809 5.52876 6.63743L0.195497 1.30417C-0.0651658 1.0435 -0.0651658 0.622176 0.195497 0.361513C0.45616 0.10085 0.877488 0.10085 1.13815 0.361513L6.00008 5.22344L10.862 0.361513C11.1227 0.10085 11.544 0.10085 11.8047 0.361513C11.9347 0.491511 12 0.662175 12 0.83284Z"
-                                    fill="#51585B" />
-                            </svg>
+                            <div class="recommendation__card__type flex align__center justify__space__between">
+                                <span class="recommendation__card__type__title desk__mini flex column">
+                                    <span>0,5 л. ПЭТ, 12 шт/уп</span>
+                                    <span>450р/бутылка</span>
+                                </span>
 
-                        </div>
+                                <div class="recommendation__card__type__amount__container flex align__center">
+                                    <button type="button"
+                                        class="remove__quantity__button flex align__center justify__center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2"
+                                            fill="none">
+                                            <path d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
+                                                fill="#232628" />
+                                        </svg>
+                                    </button>
 
+                                    <span class="current__quantity__value desk__mini">
+                                        1
+                                    </span>
 
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">бесплатно по России</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                    <button type="button"
+                                        class="add__quantity__button flex align__center justify__center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <path
+                                                d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
+                                                fill="#232628" />
+                                        </svg>
+                                    </button>
+                                </div>
 
-            <div class="contacts__card flex">
-                <div class="contacts__card__icon flex align__center justify__center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M8.33087 8.22365C8.62298 8.02891 8.79844 7.70107 8.79844 7.35V3.15C8.79844 1.4103 7.38813 0 5.64844 0H1.44844C0.868538 0 0.398438 0.470101 0.398438 1.05C0.398438 11.4882 9.91025 21 20.3484 21C20.9283 21 21.3984 20.5299 21.3984 19.95V15.75C21.3984 14.0103 19.9881 12.6 18.2484 12.6H14.0484C13.6974 12.6 13.3695 12.7755 13.1748 13.0676L11.1742 16.0685C8.9952 14.6596 7.08615 12.7986 5.61771 10.6564L5.32995 10.2243L8.33087 8.22365ZM14.6184 14.699H18.2564C18.8363 14.699 19.3064 15.1691 19.3064 15.749V18.8626C17.2723 18.7218 15.2872 18.1778 13.4356 17.3151L13.0107 17.1104L14.6184 14.699ZM12.9943 4.19897C15.3139 4.19897 17.1943 6.07938 17.1943 8.39897C17.1943 8.97887 16.7242 9.44897 16.1443 9.44897C15.6059 9.44897 15.1621 9.04363 15.1014 8.52143L15.0886 8.24225C15.0084 7.15565 14.1014 6.29897 12.9943 6.29897C12.4144 6.29897 11.9443 5.82887 11.9443 5.24897C11.9443 4.66908 12.4144 4.19897 12.9943 4.19897ZM12.9943 0C17.6335 0 21.3943 3.76081 21.3943 8.4C21.3943 8.9799 20.9242 9.45 20.3443 9.45C19.7644 9.45 19.2943 8.9799 19.2943 8.4C19.2943 4.92061 16.4737 2.1 12.9943 2.1C12.4144 2.1 11.9443 1.6299 11.9443 1.05C11.9443 0.470101 12.4144 0 12.9943 0ZM5.64484 2.10205C6.22474 2.10205 6.69484 2.57215 6.69484 3.15205V6.79011L4.28339 8.39774C3.30211 6.42642 2.68283 4.29262 2.53125 2.10205H5.64484Z"
-                            fill="url(#paint0_linear_8491_52190)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_8491_52190" x1="10.8984" y1="0" x2="10.8984" y2="21"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#008CD3" />
-                                <stop offset="1" stop-color="#00A0E0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
+                                <span class="recommendation__card__type__total__price desk__mini">
+                                    450 ₽
+                                </span>
+                            </div>
 
-                <div class="contacts__card__text__container flex column">
-                    <h3>Телефон по России</h3>
+                            <div class="recommendation__card__type flex align__center justify__space__between">
+                                <span class="recommendation__card__type__title desk__mini flex column">
+                                    <span>0,5 л. ПЭТ, 12 шт/уп</span>
+                                    <span>450р/бутылка</span>
+                                </span>
 
-                    <div class="contacts__card__description__container flex column">
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">+7 800 100 15 15</span>
+                                <div class="recommendation__card__type__amount__container flex align__center">
+                                    <button type="button"
+                                        class="remove__quantity__button flex align__center justify__center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2" viewBox="0 0 12 2"
+                                            fill="none">
+                                            <path d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
+                                                fill="#232628" />
+                                        </svg>
+                                    </button>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12 0.83284C12 1.0035 11.9347 1.17417 11.8047 1.30417L6.47141 6.63743C6.21075 6.89809 5.78942 6.89809 5.52876 6.63743L0.195497 1.30417C-0.0651658 1.0435 -0.0651658 0.622176 0.195497 0.361513C0.45616 0.10085 0.877488 0.10085 1.13815 0.361513L6.00008 5.22344L10.862 0.361513C11.1227 0.10085 11.544 0.10085 11.8047 0.361513C11.9347 0.491511 12 0.662175 12 0.83284Z"
-                                    fill="#51585B" />
-                            </svg>
+                                    <span class="current__quantity__value desk__mini">
+                                        1
+                                    </span>
 
-                        </div>
+                                    <button type="button"
+                                        class="add__quantity__button flex align__center justify__center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                                            viewBox="0 0 12 12" fill="none">
+                                            <path
+                                                d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
+                                                fill="#232628" />
+                                        </svg>
+                                    </button>
+                                </div>
 
-
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">бесплатно по России</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contacts__card flex">
-                <div class="contacts__card__icon flex align__center justify__center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M8.33087 8.22365C8.62298 8.02891 8.79844 7.70107 8.79844 7.35V3.15C8.79844 1.4103 7.38813 0 5.64844 0H1.44844C0.868538 0 0.398438 0.470101 0.398438 1.05C0.398438 11.4882 9.91025 21 20.3484 21C20.9283 21 21.3984 20.5299 21.3984 19.95V15.75C21.3984 14.0103 19.9881 12.6 18.2484 12.6H14.0484C13.6974 12.6 13.3695 12.7755 13.1748 13.0676L11.1742 16.0685C8.9952 14.6596 7.08615 12.7986 5.61771 10.6564L5.32995 10.2243L8.33087 8.22365ZM14.6184 14.699H18.2564C18.8363 14.699 19.3064 15.1691 19.3064 15.749V18.8626C17.2723 18.7218 15.2872 18.1778 13.4356 17.3151L13.0107 17.1104L14.6184 14.699ZM12.9943 4.19897C15.3139 4.19897 17.1943 6.07938 17.1943 8.39897C17.1943 8.97887 16.7242 9.44897 16.1443 9.44897C15.6059 9.44897 15.1621 9.04363 15.1014 8.52143L15.0886 8.24225C15.0084 7.15565 14.1014 6.29897 12.9943 6.29897C12.4144 6.29897 11.9443 5.82887 11.9443 5.24897C11.9443 4.66908 12.4144 4.19897 12.9943 4.19897ZM12.9943 0C17.6335 0 21.3943 3.76081 21.3943 8.4C21.3943 8.9799 20.9242 9.45 20.3443 9.45C19.7644 9.45 19.2943 8.9799 19.2943 8.4C19.2943 4.92061 16.4737 2.1 12.9943 2.1C12.4144 2.1 11.9443 1.6299 11.9443 1.05C11.9443 0.470101 12.4144 0 12.9943 0ZM5.64484 2.10205C6.22474 2.10205 6.69484 2.57215 6.69484 3.15205V6.79011L4.28339 8.39774C3.30211 6.42642 2.68283 4.29262 2.53125 2.10205H5.64484Z"
-                            fill="url(#paint0_linear_8491_52190)" />
-                        <defs>
-                            <linearGradient id="paint0_linear_8491_52190" x1="10.8984" y1="0" x2="10.8984" y2="21"
-                                gradientUnits="userSpaceOnUse">
-                                <stop stop-color="#008CD3" />
-                                <stop offset="1" stop-color="#00A0E0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-
-                <div class="contacts__card__text__container flex column">
-                    <h3>Телефон по России</h3>
-
-                    <div class="contacts__card__description__container flex column">
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">+7 800 100 15 15</span>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7"
-                                fill="none">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12 0.83284C12 1.0035 11.9347 1.17417 11.8047 1.30417L6.47141 6.63743C6.21075 6.89809 5.78942 6.89809 5.52876 6.63743L0.195497 1.30417C-0.0651658 1.0435 -0.0651658 0.622176 0.195497 0.361513C0.45616 0.10085 0.877488 0.10085 1.13815 0.361513L6.00008 5.22344L10.862 0.361513C11.1227 0.10085 11.544 0.10085 11.8047 0.361513C11.9347 0.491511 12 0.662175 12 0.83284Z"
-                                    fill="#51585B" />
-                            </svg>
-
+                                <span class="recommendation__card__type__total__price desk__mini">
+                                    450 ₽
+                                </span>
+                            </div>
                         </div>
 
+                        <div class="recommendation__card__ui__buttons__container flex column align__center">
+                            <button type="button"
+                                class="add__cart__button text__uppercase flex align__center justify__center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.7 13.6C6.36274 13.6 6.9 14.1373 6.9 14.8C6.9 15.4627 6.36274 16 5.7 16C5.03726 16 4.5 15.4627 4.5 14.8C4.5 14.1373 5.03726 13.6 5.7 13.6ZM12.9 13.6C13.5627 13.6 14.1 14.1373 14.1 14.8C14.1 15.4627 13.5627 16 12.9 16C12.2373 16 11.7 15.4627 11.7 14.8C11.7 14.1373 12.2373 13.6 12.9 13.6ZM1.3 0H2.9C3.26448 0 3.57865 0.245472 3.67205 0.590191L3.6907 0.678354L4.07864 3.2H15.7C16.1798 3.2 16.5439 3.61654 16.4961 4.08028L16.4809 4.17354L15.1594 10.1206C14.926 11.171 14.0247 11.9315 12.9623 11.9956L12.8165 12H5.87267C4.73548 12 3.76158 11.2035 3.52612 10.1039L3.50058 9.96494L2.21366 1.6H1.3C0.858172 1.6 0.5 1.24183 0.5 0.8C0.5 0.389731 0.808832 0.0515943 1.2067 0.00538219L1.3 0H2.9H1.3ZM14.7029 4.8H4.325L5.08218 9.72165C5.1376 10.0819 5.42799 10.3551 5.7829 10.395L5.87287 10.4H12.8167C13.1604 10.4 13.4619 10.1812 13.5724 9.86276L13.5977 9.77354L14.7029 4.8Z"
+                                        fill="#F9FAFB" />
+                                </svg>
 
-                        <div class="contacts__card__description__content flex align__center">
-                            <span class="desk__txt">бесплатно по России</span>
+                                <span>
+                                    В корзину
+                                </span>
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <button type="button" class="more__items__button text__uppercase flex align__center justify__center">
+                    <span>
+                        Смотреть еще
+                    </span>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0.983138 9.00014C1.4959 8.99149 1.92502 9.37035 1.99117 9.86664L1.99986 9.98314L2.00349 10.2069C2.11245 13.4322 4.76324 16 8 16C8.18696 16 8.37267 15.9915 8.55675 15.9746L8.2929 15.7071C7.90237 15.3166 7.90237 14.6834 8.2929 14.2929C8.68342 13.9024 9.31659 13.9024 9.70711 14.2929L11.7071 16.2929C12.0976 16.6834 12.0976 17.3166 11.7071 17.7071L9.70711 19.7071C9.31659 20.0976 8.68342 20.0976 8.2929 19.7071C7.90237 19.3166 7.90237 18.6834 8.2929 18.2929L8.61115 17.977C8.40861 17.9923 8.20478 18 8 18C3.7687 18 0.288864 14.7094 0.0166672 10.5105L0.00420417 10.2575L0.00014515 10.0169C-0.00916886 9.46466 0.430932 9.00946 0.983138 9.00014ZM7.70711 0.292893C8.06759 0.653377 8.09532 1.22061 7.7903 1.6129L7.70711 1.70711L7.38917 2.02302C7.59161 2.00771 7.79533 2 8 2C12.4183 2 16 5.58172 16 10C16 10.5523 15.5523 11 15 11C14.4477 11 14 10.5523 14 10C14 6.68629 11.3137 4 8 4C7.81294 4 7.62712 4.00853 7.44295 4.02545L7.70711 4.29289C8.09763 4.68342 8.09763 5.31658 7.70711 5.70711C7.34663 6.06759 6.77939 6.09532 6.3871 5.7903L6.2929 5.70711L4.2929 3.70711C3.93241 3.34662 3.90468 2.77939 4.20971 2.3871L4.2929 2.29289L6.2929 0.292893C6.68342 -0.0976311 7.31659 -0.0976311 7.70711 0.292893Z"
+                            fill="#0E4194" />
+                    </svg>
+                </button>
             </div>
         </div>
     </main>
-
-    <div class="contacts__page__ui__map__container flex column">
-        <div class="contacts__page__ui__navbar filter__wrapper flex align__center">
-            <button type="button" class="contacts__page__ui__navbar__button filter__button active"
-                data-filter="office__map">
-                Офис на карте
-            </button>
-
-            <button type="button" class="contacts__page__ui__navbar__button filter__button"
-                data-filter="warehouse__map">
-                Склад на карте
-            </button>
-
-            <button type="button" class="contacts__page__ui__navbar__button filter__button" data-filter="schema__map">
-                Схема проезда к складу
-            </button>
-        </div>
-
-        <div class="office__block filter__block office__ymap__container office__map" id="office__map"
-            data-filter="office__map">
-        </div>
-
-        <div class="warehouse__block filter__block warehouse__ymap__container warehouse__map" id="warehouse__map"
-            data-filter="warehouse__map">
-        </div>
-
-        <div class="schema__block schema__map filter__block" data-filter="schema__map">
-            <img src="/static/images/schemaMap.png" alt="Схема проезда" />
-        </div>
-    </div>
 
     <footer class="flex column align__center">
         <ul class="mob__footer__navigation adaptive flex justify__space__between align__center">
@@ -938,8 +1036,5 @@
 </body>
 <script type="module" src="/JS/floatingNavbar.js"></script>
 <script type="module" src="/JS/phoneMask.js"></script>
-<script type="module" src="/JS/officeMap.js"></script>
-<script type="module" src="/JS/blockFilter.js"></script>
-<script type="module" src="/JS/warehouseMap.js"></script>
 
 </html>
