@@ -9,6 +9,7 @@
     --primary__dark-grey: #51585B;
     --primary__website__color-hex: #008CD3;
     --primary__website__color-rgb: 0, 160, 224;
+    --primary__light__red:#FFE3DA
 }
 
 @font-face {
@@ -965,6 +966,11 @@ footer {
         padding: 4px 4px 3px 3px;
         font-size: 14px;
     }
+
+    .footer__social__cards__container  {
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 @media (min-width:600px) and (max-width:1024px) {
@@ -1327,6 +1333,12 @@ footer {
         line-height: 26px;
     }
 
+    h3 {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
     h5 {
         font-size: 15px;
         line-height: 18.27px;
@@ -1586,5 +1598,10 @@ footer {
             color: var(--primary__dark);
             margin-left: 10px;
         }
+    }
+
+    .footer__social__cards__container  {
+        width: 100%;
+        justify-content: space-between;
     }
 }
