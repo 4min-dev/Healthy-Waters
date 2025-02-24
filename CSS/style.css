@@ -13,33 +13,29 @@
 }
 
 @font-face {
-    font-family: 'Proxima Nova Cond';
-    src: url('../public/fonts/ProximaNovaCond-Regular.ttf') format('ttf'),
-        url('../public/fonts/ProximaNovaCond-Regular.woff') format('woff');
+    font-family: 'Proxima Nova';
+    src: url('../public/fonts/ProximaNova-Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proxima Nova Cond';
-    src: url('../public/fonts/ProximaNovaCond-SemiBold.ttf') format('ttf'),
-        url('../public/fonts/ProximaNovaCond-SemiBold.woff') format('woff');
+    font-family: 'Proxima Nova';
+    src: url('../public/fonts/ProximaNova-Semibold.ttf') format('ttf');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proxima Nova Cond';
-    src: url('../public/fonts/ProximaNovaCond-Bold.ttf') format('ttf'),
-        url('../public/fonts/ProximaNovaCond-Bold.ttf') format('woff');
+    font-family: 'Proxima Nova';
+    src: url('../public/fonts/ProximaNova-Bold.ttf') format('ttf');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Proxima Nova Cond';
-    src: url('../public/fonts/ProximaNovaCond-Extrabld.ttf') format('ttf'),
-        url('../public/fonts/ProximaNovaCond-ExtraBld.ttf') format('woff');
+    font-family: 'Proxima Nova';
+    src: url('../public/fonts/ProximaNova-Extrabld.ttf') format('ttf');
     font-weight: 800;
     font-style: normal;
 }
@@ -53,7 +49,7 @@
 }
 
 body {
-    font-family: 'Proxima Nova Cond', sans-serif;
+    font-family: 'Proxima Nova', sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.5;
@@ -298,6 +294,7 @@ header {
 }
 
 .catalog__header__button {
+    font-family: "Nunito Sans", serif !important;
     gap: 12px;
     font-weight: 800;
     font-size: 14px;
@@ -1451,7 +1448,7 @@ footer {
     .floating__navbar__card {
         width: 57px;
         height: 52px;
-        border-radius: 24px;
+        border-radius: 16px;
     }
 
     .floating__navbar__card svg,
