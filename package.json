@@ -2,19 +2,28 @@
     "name": "ng",
     "version": "1.0.0",
     "scripts": {
-      "whereToBuy": "live-server --open=whereToBuy.html",
-      "thanks": "live-server --open=thanks.html",
-      "refund": "live-server --open=refund.html",
-      "personal": "live-server --open=personal.html",
-      "pay": "live-server --open=pay.html",
-      "feedback": "live-server --open=feedback.html",
-      "contacts": "live-server --open=contacts.html"
+        "whereToBuy": "live-server --open=whereToBuy.html",
+        "thanks": "live-server --open=thanks.html",
+        "refund": "live-server --open=refund.html",
+        "personal": "live-server --open=personal.html",
+        "pay": "live-server --open=pay.html",
+        "feedback": "live-server --open=feedback.html",
+        "contacts": "live-server --open=contacts.html",
+        "build":"webpack"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "description": "",
     "devDependencies": {
-      "live-server": "^1.2.2"
-    }
-  }
+        "copy-webpack-plugin": "^12.0.2",
+        "css-loader": "^7.1.2",
+        "live-server": "^1.2.2",
+        "mini-css-extract-plugin": "^2.9.2",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.98.0",
+        "webpack-cli": "^6.0.1",
+        "webpack-merge": "^6.0.1"
+    },
+    "main": "index.js",
+    "description": ""
+}
