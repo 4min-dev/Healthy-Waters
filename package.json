@@ -1,0 +1,20 @@
+{
+    "name": "ng",
+    "version": "1.0.0",
+    "scripts": {
+      "whereToBuy": "live-server --open=whereToBuy.html",
+      "thanks": "live-server --open=thanks.html",
+      "refund": "live-server --open=refund.html",
+      "personal": "live-server --open=personal.html",
+      "pay": "live-server --open=pay.html",
+      "feedback": "live-server --open=feedback.html",
+      "contacts": "live-server --open=contacts.html"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+      "live-server": "^1.2.2"
+    }
+  }
