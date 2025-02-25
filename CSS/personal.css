@@ -1,0 +1,287 @@
+#personal__page__container .page__title__container {
+    background: #F9FAFB;
+}
+
+.personal__page__aside__card {
+    mix-blend-mode: Multiply;
+    text-decoration: none;
+}
+
+.personal__page__aside__card:first-child {
+    background: linear-gradient(180deg, #EEF7FA 0%, #DCF2F9 100%);
+}
+
+.orders__value {
+    width: fit-content;
+    height: fit-content;
+    background: var(--primary__dark-green);
+    border-radius: 1000px;
+    font-family: "Nunito Sans" !important;
+    font-weight: 400;
+    color: #EEF4F4;
+}
+
+.personal__block__selected__category__container {
+    border-bottom: 1px solid #D7DDE0
+}
+
+.personal__selected__block__icon {
+    border-radius: 1000px;
+    background: #F4F6F8;
+}
+
+.user__data__container {
+    height: fit-content;
+}
+
+.personal__user__avatar {
+    position: relative;
+}
+
+.personal__user__avatar .personal__user__percent__value {
+    position: absolute;
+    background: linear-gradient(90deg, #008CD3 0%, #19A2E8 100%);
+    box-shadow: 0px 6px 40px 0px #008CD366;
+    font-family: "Nunito Sans" !important;
+    font-weight: 400;
+    color: var(--primary__light-grey);
+    border-radius: 1000px;
+}
+
+.personal__about__user__data__value {
+    font-weight: 400;
+    color: var(--primary__dark)
+}
+
+.about__bonuses__button {
+    font-family: "Nunito Sans" !important;
+    font-weight: 800;
+    color: #F4F6F8;
+    background: linear-gradient(90deg, #008CD3 0%, #19A2E8 100%);
+    box-shadow: 0px 6px 40px 0px #008CD366;
+    text-decoration: none;
+}
+
+@media (min-width:1025px) {
+    #personal__page__container {
+        margin-top: 22.16px;
+        margin-bottom: 120px;
+    }
+    
+    #personal__page__container .page__title__container {
+        padding-bottom: 24px;
+    
+    }
+    
+    .personal__page__content {
+        gap: 90px;
+    }
+    
+    .personal__page__aside__navbar {
+        border-right: 1px solid #E2E8EC;
+        padding-top: 63.84px;
+    }
+    
+    .personal__page__aside__card {
+        gap: 16px;
+        width: 350px;
+        height: 57px;
+        padding: 14px 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    
+    .personal__page__aside__card__content {
+        gap: 16px
+    }
+    
+    .orders__value {
+        width: fit-content;
+        height: fit-content;
+        font-size: 14px;
+        line-height: 16.8px;
+        padding: 4px 4px 3px 3px;
+    }
+    
+    .personal__block__ui {
+        margin-top: 63.84px;
+        gap: 30px;
+    }
+    
+    .personal__block__selected__category__container {
+        gap: 16px;
+        padding-bottom: 23px;
+        width: 1060px;
+    }
+    
+    .personal__selected__block__icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .personal__block__ui__container {
+        gap: 60px;
+    }
+    
+    .user__data__container {
+        gap: 90px;
+    }
+    
+    .personal__user__avatar {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .personal__user__avatar .personal__user__percent__value {
+        bottom: 16.9px;
+        right: 0;
+        padding: 12px 9px 11px 9px;
+        font-size: 14px;
+        line-height: 16.8px;
+    }
+    
+    .personal__about__user__container {
+        gap: 90px;
+    }
+    
+    .personal__about__user__block__inf {
+        gap: 60px;
+    }
+    
+    .personal__about__user__data__value {
+        font-size: 28px;
+        line-height: 36.4px;
+    }
+    
+    .about__bonuses__button {
+        width: 276px;
+        height: 66px;
+        border-radius: 100px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media (min-width:600px) and (max-width:1024px) {
+    .personal__selected__block__title h3{
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .personal__block__title h2 {
+        font-size: 32px;
+        line-height: 35.2px;
+    }
+    
+    #personal__page__container {
+        margin-top: 16.39px;
+        margin-bottom: 90px;
+    }
+    
+    #personal__page__container .page__title__container {
+        padding-bottom: 26px;
+    
+    }
+    
+    .personal__page__content {
+        gap: 47.5px;
+        flex-direction: column;
+    }
+    
+    .personal__page__aside__navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        width: 102%;
+    }
+    
+    .personal__page__aside__card {
+        gap: 16px;
+        width: fit-content;
+        height: 50px;
+        padding: 14px 20px;
+        border-top-left-radius: 14px;
+        border-bottom-left-radius: 14px;
+    }
+    
+    .personal__page__aside__card__content {
+        gap: 16px
+    }
+
+    .personal__page__aside__card__content .desk__txt {
+        font-size: 18px;
+        line-height: 23.4px;
+    }
+    
+    .orders__value {
+        width: fit-content;
+        height: fit-content;
+        font-size: 14px;
+        line-height: 16.8px;
+        padding: 4px 4px 3px 3px;
+    }
+    
+    .personal__block__ui {
+        margin-top: 47.5px;
+        gap: 36px;
+    }
+    
+    .personal__block__selected__category__container {
+        gap: 16px;
+        padding-bottom: 8px;
+        width: 100%;
+    }
+    
+    .personal__selected__block__icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .personal__block__ui__container {
+        gap: 60px;
+    }
+    
+    .user__data__container {
+        gap: 120px;
+    }
+    
+    .personal__user__avatar {
+        width: 103.75px;
+        height: 100px;
+    }
+    
+    .personal__user__avatar .personal__user__percent__value {
+        bottom: 3.25px;
+        right: -3.75px;
+        padding: 7px 7px 10px 7px;
+        font-size: 10px;
+        line-height: 18px;
+        height: 30px;
+    }
+    
+    .personal__about__user__container {
+        gap: 120px;
+    }
+    
+    .personal__about__user__block__inf {
+        gap: 40px;
+    }
+
+    .personal__about__user__block__inf .desk__mini {
+        font-size: 14px;
+        line-height: 4px;
+    }
+    
+    .personal__about__user__data__value {
+        font-size: 18px;
+        line-height: 24.4px;
+    }
+    
+    .about__bonuses__button {
+        width: 167px;
+        height: 38px;
+        border-radius: 36px;
+        font-size: 10px;
+        line-height: 18px;
+    }
+}

@@ -69,8 +69,6 @@ main {
 
 @media (min-width:1025px) {
     main {
-        margin-left: auto;
-        margin-right: auto;
         padding-left: 210px;
         padding-right: 210px;
     }
@@ -144,7 +142,7 @@ h5 {
 }
 
 .desk__mini {
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 400;
     font-size: 18px;
     line-height: 21.6px;
@@ -154,7 +152,7 @@ h5 {
 }
 
 .desk__phone {
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 700;
     font-size: 15px;
     line-height: 18px;
@@ -164,7 +162,7 @@ h5 {
 }
 
 .desk__advantages {
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -173,7 +171,7 @@ h5 {
 }
 
 .desk__txt {
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 400;
     font-size: 22px;
     line-height: 28.6px;
@@ -262,7 +260,7 @@ header {
 
 .top__header__panel__contacts__card,
 .top__header__website__nav__card {
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 400;
     font-size: 18px;
     line-height: 18px;
@@ -289,12 +287,69 @@ header {
 }
 
 .header__ui__container {
+    margin-top: 8px;
     gap: 8px;
     width: calc(100% - 525px);
 }
 
+.about__delivery__header__container {
+    position: relative;
+    height: 40px;
+    background: #0E4194;
+}
+
+.about__delivery__header__text {
+    font-family: "Nunito Sans" !important;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+}
+
+.about__delivery__header__container .close__about__delivery__message__button {
+    position: absolute;
+    right: 21.75px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+@media (min-width:600px) and (max-width:1024px) {
+    .about__delivery__header__container {
+        height: 32px;
+    }
+
+    .about__delivery__header__text {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .about__delivery__header__container .close__about__delivery__message__button {
+        right: 20.88px;
+    }
+}
+
+@media (max-width:600px) {
+    .about__delivery__header__container {
+        height: 18px;
+    }
+
+    .about__delivery__header__text {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 9.6px;
+    }
+
+    .about__delivery__header__container .close__about__delivery__message__button {
+        right: 5.88px;
+    }
+}
+
 .catalog__header__button {
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     gap: 12px;
     font-weight: 800;
     font-size: 14px;
@@ -352,7 +407,7 @@ header {
     border: none;
     outline: none;
     background: none;
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 400;
     font-size: 18px;
     line-height: 21.6px;
@@ -379,7 +434,7 @@ header {
 }
 
 .page__navigation .page__navigation__link a {
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 400;
     font-size: 18px;
     line-height: 21.6px;
@@ -481,7 +536,7 @@ footer {
     top: 0;
     bottom: 0;
     padding-left: 25.71px;
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 400;
     font-size: 14px;
     line-height: 16.8px;
@@ -504,7 +559,7 @@ footer {
     background: var(--primary__blue);
     border: 1px solid var(--primary__blue);
     box-shadow: 0px 6px 40px 0px #0000000F;
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 800;
     font-size: 14px;
     line-height: 18px;
@@ -519,7 +574,7 @@ footer {
     border-radius: 30px;
     border: 1px solid #D7DDE0;
     box-shadow: 0px 4px 30px 0px #67E2691F;
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 800;
     font-size: 14px;
     line-height: 18px;
@@ -570,12 +625,14 @@ footer {
     position: absolute;
     background: var(--primary__dark-green);
     border-radius: 1000px;
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 400;
     color: #EEF4F4;
 }
 
 .top__header__panel.adaptive {
+    padding-top: 0px;
+    padding-bottom: 0px;
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -613,7 +670,7 @@ footer {
     height: 10px;
     top: -1.5px;
     right: -7.3px;
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 400;
     font-size: 6px;
     line-height: 7.2px;
@@ -641,7 +698,7 @@ footer {
 }
 
 .recommendation__cards__description {
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 800;
     font-size: 14px;
     line-height: 18px;
@@ -665,7 +722,7 @@ footer {
     left: 24px;
     background: #FF7246;
     color: var(--primary__light-grey);
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 400;
     font-size: 14px;
     line-height: 16.8px;
@@ -764,7 +821,7 @@ footer {
 
 .add__cart__button span,
 .more__items__button span {
-    font-family: "Nunito Sans", serif !important;
+    font-family: "Nunito Sans" !important;
     font-weight: 800;
     font-size: 14px;
     line-height: 18px;
@@ -781,7 +838,7 @@ footer {
 .aqua__marker {
     list-style-type: none;
     padding-left: 0;
-    gap:16px;
+    gap: 16px;
 }
 
 .aqua__marker .desk__txt {
@@ -869,7 +926,7 @@ footer {
         border: none;
         outline: none;
         background: none;
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 400;
         font-size: 18px;
         line-height: 21.6px;
@@ -963,7 +1020,7 @@ footer {
         top: 0;
         bottom: 0;
         padding-left: 25.71px;
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 400;
         font-size: 14px;
         line-height: 16.8px;
@@ -986,7 +1043,7 @@ footer {
         background: var(--primary__blue);
         border: 1px solid var(--primary__blue);
         box-shadow: 0px 6px 40px 0px #0000000F;
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 800;
         font-size: 14px;
         line-height: 18px;
@@ -1001,7 +1058,7 @@ footer {
         border-radius: 30px;
         border: 1px solid #D7DDE0;
         box-shadow: 0px 4px 30px 0px #67E2691F;
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 800;
         font-size: 14px;
         line-height: 18px;
@@ -1063,7 +1120,7 @@ footer {
         padding: 4px 4px 3px 3px;
         background: var(--primary__dark-green);
         border-radius: 1000px;
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 400;
         font-size: 14px;
         color: #EEF4F4;
@@ -1107,7 +1164,7 @@ footer {
         height: 10px;
         top: -1.5px;
         right: -7.3px;
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 400;
         font-size: 6px;
         line-height: 7.2px;
@@ -1228,7 +1285,7 @@ footer {
 
     header .geo__card,
     header .whatsapp__tablet__link {
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 800;
         font-size: 10px;
         line-height: 18px;
@@ -1330,7 +1387,7 @@ footer {
         width: fit-content;
         white-space: nowrap;
         border-radius: 30px;
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 800;
         line-height: 18px;
         color: var(--primary__dark);
@@ -1398,7 +1455,7 @@ footer {
     }
 
     .page__navigation .page__navigation__link a {
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 400;
         font-size: 18px;
         line-height: 21.6px;
@@ -1506,9 +1563,9 @@ footer {
         width: 12.8px;
         height: 16px;
     }
-    
-    .footer__social__cards__container  {
-        gap:10.34px;
+
+    .footer__social__cards__container {
+        gap: 10.34px;
     }
 }
 
@@ -1713,7 +1770,7 @@ footer {
         height: fit-content;
         top: -1.5px;
         right: -7.3px;
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 400;
         font-size: 6px;
         line-height: 8px;
@@ -1730,7 +1787,7 @@ footer {
     }
 
     .mob__footer__navigation li {
-        font-family: "Nunito Sans", serif !important;
+        font-family: "Nunito Sans" !important;
         font-weight: 800;
         font-size: 8px;
         line-height: 18px;
@@ -1780,7 +1837,7 @@ footer {
         }
 
         .page__navigation .page__navigation__link a {
-            font-family: "Nunito Sans", serif !important;
+            font-family: "Nunito Sans" !important;
             font-weight: 400;
             font-size: 18px;
             line-height: 21.6px;
@@ -1946,24 +2003,24 @@ footer {
         white-space: nowrap;
     }
 
-     .recommendation__card__text__container {
+    .recommendation__card__text__container {
         align-items: center;
         justify-content: center;
     }
 
-     .recommendation__card__title h5 {
+    .recommendation__card__title h5 {
         font-size: 18px;
         line-height: 20px;
         text-align: center;
     }
 
-     .recommendation__card__dscription {
+    .recommendation__card__dscription {
         text-align: center;
         font-size: 12px;
         line-height: 13.2px;
     }
 
-     .rating__link {
+    .rating__link {
         font-size: 12px;
         line-height: 13.2px;
         margin-top: 6px;

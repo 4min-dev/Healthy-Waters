@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/thanks.css">
-    <title>Contacts</title>
+    <link rel="stylesheet" href="/CSS/personal.css">
+    <title>Personal</title>
 </head>
 
 <body>
@@ -397,545 +397,325 @@
         </div>
     </header>
 
-    <div class="page__title__container flex column">
-        <ul class="page__navigation flex align__center">
-            <li class="page__navigation__link">
-                <a href="#">Главная</a>
-            </li>
-            <li class="page__navigation__link">
-                <a href="#">Спасибо, что покупаете у нас</a>
-            </li>
-        </ul>
-    </div>
+    <main class="flex column" id="personal__page__container">
+        <div class="page__title__container flex column">
+            <ul class="page__navigation flex align__center">
+                <li class="page__navigation__link">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="page__navigation__link">
+                    <a href="#">Личный кабинет</a>
+                </li>
+            </ul>
 
-    <div class="thanks__block__content flex column">
-        <span class="thanks__block__title">
-            <h1>Спасибо,</h1>
-            <h1>что покупаете у нас</h1>
-        </span>
-        <span class="thanks__block__description flex column desk__txt">
-            <span>Мы рады, что вы это сделали.</span>
-            <span class="desktop table">
-                <span>
-                    Посмотрите краткий обзор новых продуктов
-                </span>
-                <span>и брендов. Мы надеемся на новую встречу!</span>
+            <span class="page__title">
+                <h1>Личный кабинет</h1>
             </span>
+        </div>
 
-            <span class="adaptive">
-                <span>
-                    Посмотрите краткий обзор новых продуктов и брендов. Мы надеемся на новую встречу!
-                </span>
-            </span>
-        </span>
+        <div class="personal__page__content flex">
+            <aside class="personal__page__aside__navbar flex column">
+                <a href="#" class="personal__page__aside__card flex align__center justify__space__between">
+                    <div class="personal__page__aside__card__content flex align__center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                            <path
+                                d="M16.703 5.73193V5.26896C16.703 3.26504 14.776 1.82448 12.854 2.39162L4.26815 4.92508C2.99267 5.30144 2.11719 6.47258 2.11719 7.80243V9.08899"
+                                stroke="url(#paint0_linear_6227_102813)" stroke-width="2" stroke-linecap="round" />
+                            <rect x="1.84375" y="6.66211" width="18.3673" height="14.5858" rx="3"
+                                stroke="url(#paint1_linear_6227_102813)" stroke-width="2" />
+                            <ellipse cx="17.5101" cy="13.9496" rx="1.08043" ry="1.08043"
+                                stroke="url(#paint2_linear_6227_102813)" stroke-width="2" />
+                            <path
+                                d="M8.54687 18.4077C8.54687 18.96 8.99459 19.4077 9.54687 19.4077C10.0992 19.4077 10.5469 18.96 10.5469 18.4077L8.54687 18.4077ZM8.54688 9.49414L8.54687 18.4077L10.5469 18.4077L10.5469 9.49414L8.54688 9.49414Z"
+                                fill="url(#paint3_linear_6227_102813)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_6227_102813" x1="2.11719" y1="9.08899" x2="16.703"
+                                    y2="9.08899" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_6227_102813" x1="1.84375" y1="21.2479" x2="20.2111"
+                                    y2="21.2479" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_6227_102813" x1="16.4297" y1="15.03" x2="18.5906"
+                                    y2="15.03" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_6227_102813" x1="8.54688" y1="9.49414" x2="8.54687"
+                                    y2="18.4077" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
 
-        <a href="#" class="thanks__block__landing__button flex align__center justify__center text__uppercase">
-            Продолжить покупки
-        </a>
-    </div>
+                        <span class="personal__page__aside__card__title desk__txt">
+                            Мой бонусный счет
+                        </span>
+                    </div>
 
-    <main class="flex column" id="thanks__page__container">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.00276 0.335938C1.17343 0.335938 1.34409 0.40127 1.47409 0.531268L6.80735 5.86453C7.06801 6.12519 7.06801 6.54652 6.80735 6.80718L1.47409 12.1404C1.21343 12.4011 0.792098 12.4011 0.531435 12.1404C0.270772 11.8798 0.270772 11.4584 0.531435 11.1978L5.39337 6.33585L0.531435 1.47392C0.270772 1.21326 0.270772 0.791931 0.531435 0.531268C0.661433 0.40127 0.832097 0.335938 1.00276 0.335938Z"
+                            fill="#232628" />
+                    </svg>
+                </a>
 
-        <div class="thanks__page__content flex column">
+                <a href="#" class="personal__page__aside__card flex align__center justify__space__between">
+                    <div class="personal__page__aside__card__content flex align__center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                            <path
+                                d="M1.84375 19.5017C1.84375 17.566 3.62808 15.998 5.83416 15.998H8.45116L11.425 20.5074L14.4746 15.998H17.0051C19.2112 15.998 20.9955 17.566 20.9955 19.5017"
+                                stroke="url(#paint0_linear_8562_9279)" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M14.4504 10.387C16.1312 8.70627 16.1312 5.98124 14.4504 4.30049C12.7696 2.61975 10.0445 2.61975 8.36367 4.3005C6.68287 5.98124 6.68287 8.70626 8.36368 10.387C10.0445 12.0678 12.7696 12.0678 14.4504 10.387Z"
+                                stroke="url(#paint1_linear_8562_9279)" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_8562_9279" x1="1.84375" y1="20.5074" x2="20.9955"
+                                    y2="20.5074" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_8562_9279" x1="11.407" y1="13.4303" x2="17.4936"
+                                    y2="7.34354" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
 
-            <div class="recommendation__cards__container flex column">
-                <div class="recommendation__cards__text__container">
-                    <h2>Рекомендуемые товары</h2>
+                        <span class="personal__page__aside__card__title desk__txt">
+                            Учетные данные
+                        </span>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.00276 0.335938C1.17343 0.335938 1.34409 0.40127 1.47409 0.531268L6.80735 5.86453C7.06801 6.12519 7.06801 6.54652 6.80735 6.80718L1.47409 12.1404C1.21343 12.4011 0.792098 12.4011 0.531435 12.1404C0.270772 11.8798 0.270772 11.4584 0.531435 11.1978L5.39337 6.33585L0.531435 1.47392C0.270772 1.21326 0.270772 0.791931 0.531435 0.531268C0.661433 0.40127 0.832097 0.335938 1.00276 0.335938Z"
+                            fill="#232628" />
+                    </svg>
+                </a>
+
+                <a href="#" class="personal__page__aside__card flex align__center justify__space__between">
+                    <div class="personal__page__aside__card__content flex align__center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.14997 19.0329C8.06122 19.0329 8.79993 19.7717 8.79993 20.6829C8.79993 21.5942 8.06122 22.3329 7.14997 22.3329C6.23872 22.3329 5.5 21.5942 5.5 20.6829C5.5 19.7717 6.23872 19.0329 7.14997 19.0329ZM17.0515 19.0329C17.9627 19.0329 18.7014 19.7717 18.7014 20.6829C18.7014 21.5942 17.9627 22.3329 17.0515 22.3329C16.1402 22.3329 15.4015 21.5942 15.4015 20.6829C15.4015 19.7717 16.1402 19.0329 17.0515 19.0329ZM1.09998 0.335938H3.29993C3.80109 0.335938 4.23305 0.673455 4.36147 1.14743L4.38712 1.26866L4.92053 4.73585H20.8996C21.5593 4.73585 22.06 5.30858 21.9942 5.94621L21.9734 6.07445L20.1562 14.2515C19.8353 15.6957 18.5961 16.7414 17.1354 16.8296L16.9349 16.8356H7.38727C5.82367 16.8356 4.48458 15.7404 4.16083 14.2286L4.12571 14.0375L2.35624 2.53589H1.09998C0.492477 2.53589 0 2.04342 0 1.43592C0 0.871807 0.424636 0.406878 0.971697 0.343338L1.09998 0.335938H3.29993H1.09998ZM19.5377 6.93444H5.26834L6.30944 13.7016C6.38564 14.1969 6.78492 14.5725 7.27291 14.6274L7.39663 14.6343H16.9442C17.4168 14.6343 17.8313 14.3334 17.9832 13.8956L18.018 13.7729L19.5377 6.93444Z"
+                                fill="url(#paint0_linear_8562_9321)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_8562_9321" x1="11" y1="0.335937" x2="11" y2="22.3329"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#00A0E0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <span class="personal__page__aside__card__title desk__txt">
+                            Мои заказы
+                        </span>
+
+                        <span class="orders__value">
+                            20
+                        </span>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.00276 0.335938C1.17343 0.335938 1.34409 0.40127 1.47409 0.531268L6.80735 5.86453C7.06801 6.12519 7.06801 6.54652 6.80735 6.80718L1.47409 12.1404C1.21343 12.4011 0.792098 12.4011 0.531435 12.1404C0.270772 11.8798 0.270772 11.4584 0.531435 11.1978L5.39337 6.33585L0.531435 1.47392C0.270772 1.21326 0.270772 0.791931 0.531435 0.531268C0.661433 0.40127 0.832097 0.335938 1.00276 0.335938Z"
+                            fill="#232628" />
+                    </svg>
+                </a>
+
+                <a href="#" class="personal__page__aside__card flex align__center justify__space__between">
+                    <div class="personal__page__aside__card__content flex align__center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                            <path d="M19.7854 10.9023H4.04688V20.6087H19.7854V10.9023Z"
+                                stroke="url(#paint0_linear_8562_25995)" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M18.1421 3.08594H14.7422V5.27946L18.1421 7.92539V3.08594Z"
+                                stroke="url(#paint1_linear_8562_25995)" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M11.9241 3.08594L1.875 10.9004H21.9731L11.9241 3.08594Z"
+                                stroke="url(#paint2_linear_8562_25995)" stroke-width="2" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M1.84375 20.6211H22.0104" stroke="url(#paint3_linear_8562_25995)" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <defs>
+                                <linearGradient id="paint0_linear_8562_25995" x1="4.04688" y1="20.6087" x2="19.7854"
+                                    y2="20.6087" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_8562_25995" x1="14.7422" y1="7.92539" x2="18.1421"
+                                    y2="7.92539" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_8562_25995" x1="1.875" y1="10.9004" x2="21.9731"
+                                    y2="10.9004" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_8562_25995" x1="1.84375" y1="21.6211" x2="22.0104"
+                                    y2="21.6211" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <span class="personal__page__aside__card__title desk__txt">
+                            Адреса доставки
+                        </span>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.00276 0.335938C1.17343 0.335938 1.34409 0.40127 1.47409 0.531268L6.80735 5.86453C7.06801 6.12519 7.06801 6.54652 6.80735 6.80718L1.47409 12.1404C1.21343 12.4011 0.792098 12.4011 0.531435 12.1404C0.270772 11.8798 0.270772 11.4584 0.531435 11.1978L5.39337 6.33585L0.531435 1.47392C0.270772 1.21326 0.270772 0.791931 0.531435 0.531268C0.661433 0.40127 0.832097 0.335938 1.00276 0.335938Z"
+                            fill="#232628" />
+                    </svg>
+                </a>
+
+                <a href="#" class="personal__page__aside__card flex align__center justify__space__between">
+                    <div class="personal__page__aside__card__content flex align__center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8 21.5859C8 22.0988 7.61396 22.5214 7.11662 22.5792L7 22.5859L5 22.5859C3.40232 22.5859 2.09634 21.337 2.00509 19.7622L2 19.5859L2 5.58594C2 3.98826 3.24892 2.68228 4.82373 2.59103L5 2.58594L7 2.58594C7.55229 2.58594 8 3.03365 8 3.58594C8 4.09877 7.61396 4.52144 7.11662 4.57921L7 4.58594L5 4.58594C4.48716 4.58594 4.06449 4.97198 4.00673 5.46932L4 5.58594L4 19.5859C4 20.0988 4.38604 20.5214 4.88338 20.5792L5 20.5859L7 20.5859C7.55228 20.5859 8 21.0337 8 21.5859ZM21.989 12.4375L21.996 12.4959L22 12.5859L21.9972 12.6612L21.9798 12.7867L21.9503 12.8981L21.9063 13.0092L21.854 13.1066L21.7803 13.2114L21.7071 13.293L18.7071 16.293C18.3166 16.6836 17.6834 16.6836 17.2929 16.293C16.9024 15.9025 16.9024 15.2694 17.2929 14.8788L18.586 13.5859L9 13.5859C8.44771 13.5859 8 13.1382 8 12.5859C8 12.0337 8.44771 11.5859 9 11.5859L18.586 11.5859L17.2929 10.293C16.9024 9.90252 16.9024 9.26935 17.2929 8.87883C17.6834 8.48831 18.3166 8.48831 18.7071 8.87883L21.7071 11.8788C21.7425 11.9142 21.7747 11.9516 21.8037 11.9906L21.8753 12.1019L21.9288 12.2146L21.9642 12.3199L21.989 12.4375Z"
+                                fill="url(#paint0_linear_8562_26037)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_8562_26037" x1="22" y1="12.5859" x2="2" y2="12.5859"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#00A0E0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <span class="personal__page__aside__card__title desk__txt">
+                            Выход
+                        </span>
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.00276 0.335938C1.17343 0.335938 1.34409 0.40127 1.47409 0.531268L6.80735 5.86453C7.06801 6.12519 7.06801 6.54652 6.80735 6.80718L1.47409 12.1404C1.21343 12.4011 0.792098 12.4011 0.531435 12.1404C0.270772 11.8798 0.270772 11.4584 0.531435 11.1978L5.39337 6.33585L0.531435 1.47392C0.270772 1.21326 0.270772 0.791931 0.531435 0.531268C0.661433 0.40127 0.832097 0.335938 1.00276 0.335938Z"
+                            fill="#232628" />
+                    </svg>
+                </a>
+            </aside>
+
+            <div class="personal__block__ui flex column">
+                <div class="personal__block__selected__category__container flex align__center">
+                    <div class="personal__selected__block__icon flex align__center justify__center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                            <path
+                                d="M15.8593 4.47607V4.0131C15.8593 2.00918 13.9322 0.568622 12.0102 1.13576L3.4244 3.66922C2.14892 4.04558 1.27344 5.21672 1.27344 6.54657V7.83313"
+                                stroke="url(#paint0_linear_8562_115508)" stroke-width="2" stroke-linecap="round" />
+                            <rect x="1" y="5.40625" width="18.3673" height="14.5858" rx="3"
+                                stroke="url(#paint1_linear_8562_115508)" stroke-width="2" />
+                            <ellipse cx="16.6664" cy="12.6937" rx="1.08043" ry="1.08043"
+                                stroke="url(#paint2_linear_8562_115508)" stroke-width="2" />
+                            <path
+                                d="M7.70312 17.1518C7.70312 17.7041 8.15084 18.1518 8.70312 18.1518C9.25541 18.1518 9.70312 17.7041 9.70312 17.1518L7.70312 17.1518ZM7.70312 8.23828L7.70312 17.1518L9.70312 17.1518L9.70312 8.23828L7.70312 8.23828Z"
+                                fill="url(#paint3_linear_8562_115508)" />
+                            <defs>
+                                <linearGradient id="paint0_linear_8562_115508" x1="1.27344" y1="7.83313" x2="15.8593"
+                                    y2="7.83313" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_8562_115508" x1="1" y1="19.9921" x2="19.3673"
+                                    y2="19.9921" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                                <linearGradient id="paint2_linear_8562_115508" x1="15.5859" y1="13.7741" x2="17.7468"
+                                    y2="13.7741" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                                <linearGradient id="paint3_linear_8562_115508" x1="7.70313" y1="8.23828" x2="7.70312"
+                                    y2="17.1518" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#008CD3" />
+                                    <stop offset="1" stop-color="#19A2E8" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <span class="personal__selected__block__title">
+                        <h3>Бонусный счет</h3>
+                    </span>
                 </div>
 
-                <div class="recommendation__cards__content flex">
-                    <div class="recommendation__card flex column">
-                        <span class="recommendation__card__tag">
-                            хит продаж
-                        </span>
-
-                        <div class="recommendation__cards__main__container flex column">
-                            <div class="recommendation__card__preview">
-                                <img src="/static/images/water.png" alt="Минеральная вода стэлмас магний" />
-                            </div>
-
-                            <div class="recommendation__card__text__container flex column">
-                                <span class="recommendation__card__title">
-                                    <h5>Mинеральная вода стэлмас магний / stelmas mg (газ)</h5>
-                                </span>
-                                <a href="#" class="recommendation__card__rating__container flex align__center">
-                                    <div class="recommendation__card__rating__stars__preview">
-                                        <img src="/static/images/star.png" alt="4.5 рейтинг" />
-                                    </div>
-
-                                    <span class="desk__txt rating__link">
-                                        20 отзывов
-                                    </span>
-                                </a>
-
-                                <span class="recommendation__card__dscription desk__txt">
-                                    Клетки, получая энергию этой воды, медленнее изнашиваются, получают больше энергии.
-                                </span>
-                            </div>
-
-                            <div class="recommendation__card__types__container flex column">
-                                <div class="recommendation__card__type flex align__center justify__space__between">
-                                    <span class="recommendation__card__type__title desk__mini flex column">
-                                        <span>0,5 л. ПЭТ, 12 шт/уп</span>
-                                        <span>450р/бутылка</span>
-                                    </span>
-
-                                    <div class="recommendation__card__type__amount__container flex align__center">
-                                        <button type="button"
-                                            class="remove__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2"
-                                                viewBox="0 0 12 2" fill="none">
-                                                <path
-                                                    d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-
-                                        <span class="current__quantity__value desk__mini">
-                                            1
-                                        </span>
-
-                                        <button type="button"
-                                            class="add__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                    d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <span class="recommendation__card__type__total__price desk__mini">
-                                        450 ₽
-                                    </span>
-                                </div>
-
-                                <div class="recommendation__card__type flex align__center justify__space__between">
-                                    <span class="recommendation__card__type__title desk__mini flex column">
-                                        <span>0,5 л. ПЭТ, 12 шт/уп</span>
-                                        <span>450р/бутылка</span>
-                                    </span>
-
-                                    <div class="recommendation__card__type__amount__container flex align__center">
-                                        <button type="button"
-                                            class="remove__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2"
-                                                viewBox="0 0 12 2" fill="none">
-                                                <path
-                                                    d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-
-                                        <span class="current__quantity__value desk__mini">
-                                            1
-                                        </span>
-
-                                        <button type="button"
-                                            class="add__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                    d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <span class="recommendation__card__type__total__price desk__mini">
-                                        450 ₽
-                                    </span>
-                                </div>
-
-                                <div class="recommendation__card__type flex align__center justify__space__between">
-                                    <span class="recommendation__card__type__title desk__mini flex column">
-                                        <span>0,5 л. ПЭТ, 12 шт/уп</span>
-                                        <span>450р/бутылка</span>
-                                    </span>
-
-                                    <div class="recommendation__card__type__amount__container flex align__center">
-                                        <button type="button"
-                                            class="remove__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2"
-                                                viewBox="0 0 12 2" fill="none">
-                                                <path
-                                                    d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-
-                                        <span class="current__quantity__value desk__mini">
-                                            1
-                                        </span>
-
-                                        <button type="button"
-                                            class="add__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                    d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <span class="recommendation__card__type__total__price desk__mini">
-                                        450 ₽
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="recommendation__card__ui__buttons__container flex column align__center">
-                                <button type="button"
-                                    class="add__cart__button text__uppercase flex align__center justify__center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M5.7 13.6C6.36274 13.6 6.9 14.1373 6.9 14.8C6.9 15.4627 6.36274 16 5.7 16C5.03726 16 4.5 15.4627 4.5 14.8C4.5 14.1373 5.03726 13.6 5.7 13.6ZM12.9 13.6C13.5627 13.6 14.1 14.1373 14.1 14.8C14.1 15.4627 13.5627 16 12.9 16C12.2373 16 11.7 15.4627 11.7 14.8C11.7 14.1373 12.2373 13.6 12.9 13.6ZM1.3 0H2.9C3.26448 0 3.57865 0.245472 3.67205 0.590191L3.6907 0.678354L4.07864 3.2H15.7C16.1798 3.2 16.5439 3.61654 16.4961 4.08028L16.4809 4.17354L15.1594 10.1206C14.926 11.171 14.0247 11.9315 12.9623 11.9956L12.8165 12H5.87267C4.73548 12 3.76158 11.2035 3.52612 10.1039L3.50058 9.96494L2.21366 1.6H1.3C0.858172 1.6 0.5 1.24183 0.5 0.8C0.5 0.389731 0.808832 0.0515943 1.2067 0.00538219L1.3 0H2.9H1.3ZM14.7029 4.8H4.325L5.08218 9.72165C5.1376 10.0819 5.42799 10.3551 5.7829 10.395L5.87287 10.4H12.8167C13.1604 10.4 13.4619 10.1812 13.5724 9.86276L13.5977 9.77354L14.7029 4.8Z"
-                                            fill="#F9FAFB" />
-                                    </svg>
-
-                                    <span>
-                                        В корзину
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="recommendation__card flex column">
-                        <span class="recommendation__card__tag">
-                            хит продаж
-                        </span>
-
-                        <div class="recommendation__card__content flex column">
-                            <div class="recommendation__card__preview">
-                                <img src="/static/images/water.png" alt="Минеральная вода стэлмас магний" />
-                            </div>
-
-                            <div class="recommendation__card__text__container flex column">
-                                <span class="recommendation__card__title">
-                                    <h5>Mинеральная вода стэлмас магний / stelmas mg (газ)</h5>
-                                </span>
-                                <a href="#" class="recommendation__card__rating__container flex align__center">
-                                    <div class="recommendation__card__rating__stars__preview">
-                                        <img src="/static/images/star.png" alt="4.5 рейтинг" />
-                                    </div>
-
-                                    <span class="desk__txt rating__link">
-                                        20 отзывов
-                                    </span>
-                                </a>
-
-                                <span class="recommendation__card__dscription desk__txt">
-                                    Клетки, получая энергию этой воды, медленнее изнашиваются, получают больше энергии.
-                                </span>
-                            </div>
-
-                            <div class="recommendation__card__types__container flex column">
-                                <div class="recommendation__card__type flex align__center justify__space__between">
-                                    <span class="recommendation__card__type__title desk__mini flex column">
-                                        <span>0,5 л. ПЭТ, 12 шт/уп</span>
-                                        <span>450р/бутылка</span>
-                                    </span>
-
-                                    <div class="recommendation__card__type__amount__container flex align__center">
-                                        <button type="button"
-                                            class="remove__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2"
-                                                viewBox="0 0 12 2" fill="none">
-                                                <path
-                                                    d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-
-                                        <span class="current__quantity__value desk__mini">
-                                            1
-                                        </span>
-
-                                        <button type="button"
-                                            class="add__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                    d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <span class="recommendation__card__type__total__price desk__mini">
-                                        450 ₽
-                                    </span>
-                                </div>
-
-                                <div class="recommendation__card__type flex align__center justify__space__between">
-                                    <span class="recommendation__card__type__title desk__mini flex column">
-                                        <span>0,5 л. ПЭТ, 12 шт/уп</span>
-                                        <span>450р/бутылка</span>
-                                    </span>
-
-                                    <div class="recommendation__card__type__amount__container flex align__center">
-                                        <button type="button"
-                                            class="remove__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2"
-                                                viewBox="0 0 12 2" fill="none">
-                                                <path
-                                                    d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-
-                                        <span class="current__quantity__value desk__mini">
-                                            1
-                                        </span>
-
-                                        <button type="button"
-                                            class="add__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                    d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <span class="recommendation__card__type__total__price desk__mini">
-                                        450 ₽
-                                    </span>
-                                </div>
-
-                                <div class="recommendation__card__type flex align__center justify__space__between">
-                                    <span class="recommendation__card__type__title desk__mini flex column">
-                                        <span>0,5 л. ПЭТ, 12 шт/уп</span>
-                                        <span>450р/бутылка</span>
-                                    </span>
-
-                                    <div class="recommendation__card__type__amount__container flex align__center">
-                                        <button type="button"
-                                            class="remove__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2"
-                                                viewBox="0 0 12 2" fill="none">
-                                                <path
-                                                    d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-
-                                        <span class="current__quantity__value desk__mini">
-                                            1
-                                        </span>
-
-                                        <button type="button"
-                                            class="add__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                    d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <span class="recommendation__card__type__total__price desk__mini">
-                                        450 ₽
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="recommendation__card__ui__buttons__container flex column align__center">
-                                <button type="button"
-                                    class="add__cart__button text__uppercase flex align__center justify__center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M5.7 13.6C6.36274 13.6 6.9 14.1373 6.9 14.8C6.9 15.4627 6.36274 16 5.7 16C5.03726 16 4.5 15.4627 4.5 14.8C4.5 14.1373 5.03726 13.6 5.7 13.6ZM12.9 13.6C13.5627 13.6 14.1 14.1373 14.1 14.8C14.1 15.4627 13.5627 16 12.9 16C12.2373 16 11.7 15.4627 11.7 14.8C11.7 14.1373 12.2373 13.6 12.9 13.6ZM1.3 0H2.9C3.26448 0 3.57865 0.245472 3.67205 0.590191L3.6907 0.678354L4.07864 3.2H15.7C16.1798 3.2 16.5439 3.61654 16.4961 4.08028L16.4809 4.17354L15.1594 10.1206C14.926 11.171 14.0247 11.9315 12.9623 11.9956L12.8165 12H5.87267C4.73548 12 3.76158 11.2035 3.52612 10.1039L3.50058 9.96494L2.21366 1.6H1.3C0.858172 1.6 0.5 1.24183 0.5 0.8C0.5 0.389731 0.808832 0.0515943 1.2067 0.00538219L1.3 0H2.9H1.3ZM14.7029 4.8H4.325L5.08218 9.72165C5.1376 10.0819 5.42799 10.3551 5.7829 10.395L5.87287 10.4H12.8167C13.1604 10.4 13.4619 10.1812 13.5724 9.86276L13.5977 9.77354L14.7029 4.8Z"
-                                            fill="#F9FAFB" />
-                                    </svg>
-
-                                    <span>
-                                        В корзину
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="recommendation__card flex column">
-                        <span class="recommendation__card__tag">
-                            хит продаж
-                        </span>
-
-                        <div class="recommendation__cards__main__container flex column">
-                            <div class="recommendation__card__preview">
-                                <img src="/static/images/water.png" alt="Минеральная вода стэлмас магний" />
-                            </div>
-
-                            <div class="recommendation__card__text__container flex column">
-                                <span class="recommendation__card__title">
-                                    <h5>Mинеральная вода стэлмас магний / stelmas mg (газ)</h5>
-                                </span>
-                                <a href="#" class="recommendation__card__rating__container flex align__center">
-                                    <div class="recommendation__card__rating__stars__preview">
-                                        <img src="/static/images/star.png" alt="4.5 рейтинг" />
-                                    </div>
-
-                                    <span class="desk__txt rating__link">
-                                        20 отзывов
-                                    </span>
-                                </a>
-
-                                <span class="recommendation__card__dscription desk__txt">
-                                    Клетки, получая энергию этой воды, медленнее изнашиваются, получают больше энергии.
-                                </span>
-                            </div>
-
-                            <div class="recommendation__card__types__container flex column">
-                                <div class="recommendation__card__type flex align__center justify__space__between">
-                                    <span class="recommendation__card__type__title desk__mini flex column">
-                                        <span>0,5 л. ПЭТ, 12 шт/уп</span>
-                                        <span>450р/бутылка</span>
-                                    </span>
-
-                                    <div class="recommendation__card__type__amount__container flex align__center">
-                                        <button type="button"
-                                            class="remove__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2"
-                                                viewBox="0 0 12 2" fill="none">
-                                                <path
-                                                    d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-
-                                        <span class="current__quantity__value desk__mini">
-                                            1
-                                        </span>
-
-                                        <button type="button"
-                                            class="add__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                    d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <span class="recommendation__card__type__total__price desk__mini">
-                                        450 ₽
-                                    </span>
-                                </div>
-
-                                <div class="recommendation__card__type flex align__center justify__space__between">
-                                    <span class="recommendation__card__type__title desk__mini flex column">
-                                        <span>0,5 л. ПЭТ, 12 шт/уп</span>
-                                        <span>450р/бутылка</span>
-                                    </span>
-
-                                    <div class="recommendation__card__type__amount__container flex align__center">
-                                        <button type="button"
-                                            class="remove__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2"
-                                                viewBox="0 0 12 2" fill="none">
-                                                <path
-                                                    d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-
-                                        <span class="current__quantity__value desk__mini">
-                                            1
-                                        </span>
-
-                                        <button type="button"
-                                            class="add__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                    d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <span class="recommendation__card__type__total__price desk__mini">
-                                        450 ₽
-                                    </span>
-                                </div>
-
-                                <div class="recommendation__card__type flex align__center justify__space__between">
-                                    <span class="recommendation__card__type__title desk__mini flex column">
-                                        <span>0,5 л. ПЭТ, 12 шт/уп</span>
-                                        <span>450р/бутылка</span>
-                                    </span>
-
-                                    <div class="recommendation__card__type__amount__container flex align__center">
-                                        <button type="button"
-                                            class="remove__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="2"
-                                                viewBox="0 0 12 2" fill="none">
-                                                <path
-                                                    d="M12 1.44838H6.49201H5.49521H0V0.551758H5.49521H6.49201H12V1.44838Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-
-                                        <span class="current__quantity__value desk__mini">
-                                            1
-                                        </span>
-
-                                        <button type="button"
-                                            class="add__quantity__button flex align__center justify__center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                                viewBox="0 0 12 12" fill="none">
-                                                <path
-                                                    d="M12 6.43603H6.49201V12H5.49521V6.43603H0V5.53941H5.49521V0H6.49201V5.53941H12V6.43603Z"
-                                                    fill="#232628" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <span class="recommendation__card__type__total__price desk__mini">
-                                        450 ₽
-                                    </span>
-                                </div>
-                            </div>
-
-                            <div class="recommendation__card__ui__buttons__container flex column align__center">
-                                <button type="button"
-                                    class="add__cart__button text__uppercase flex align__center justify__center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
-                                        fill="none">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M5.7 13.6C6.36274 13.6 6.9 14.1373 6.9 14.8C6.9 15.4627 6.36274 16 5.7 16C5.03726 16 4.5 15.4627 4.5 14.8C4.5 14.1373 5.03726 13.6 5.7 13.6ZM12.9 13.6C13.5627 13.6 14.1 14.1373 14.1 14.8C14.1 15.4627 13.5627 16 12.9 16C12.2373 16 11.7 15.4627 11.7 14.8C11.7 14.1373 12.2373 13.6 12.9 13.6ZM1.3 0H2.9C3.26448 0 3.57865 0.245472 3.67205 0.590191L3.6907 0.678354L4.07864 3.2H15.7C16.1798 3.2 16.5439 3.61654 16.4961 4.08028L16.4809 4.17354L15.1594 10.1206C14.926 11.171 14.0247 11.9315 12.9623 11.9956L12.8165 12H5.87267C4.73548 12 3.76158 11.2035 3.52612 10.1039L3.50058 9.96494L2.21366 1.6H1.3C0.858172 1.6 0.5 1.24183 0.5 0.8C0.5 0.389731 0.808832 0.0515943 1.2067 0.00538219L1.3 0H2.9H1.3ZM14.7029 4.8H4.325L5.08218 9.72165C5.1376 10.0819 5.42799 10.3551 5.7829 10.395L5.87287 10.4H12.8167C13.1604 10.4 13.4619 10.1812 13.5724 9.86276L13.5977 9.77354L14.7029 4.8Z"
-                                            fill="#F9FAFB" />
-                                    </svg>
-
-                                    <span>
-                                        В корзину
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <button type="button" class="more__items__button text__uppercase flex align__center justify__center">
-                    <span>
-                        Смотреть еще
+                <div class="personal__block__ui__container flex column">
+                    <span class="personal__block__title">
+                        <h2>Здравствуйте, user name</h2>
                     </span>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0.983138 9.00014C1.4959 8.99149 1.92502 9.37035 1.99117 9.86664L1.99986 9.98314L2.00349 10.2069C2.11245 13.4322 4.76324 16 8 16C8.18696 16 8.37267 15.9915 8.55675 15.9746L8.2929 15.7071C7.90237 15.3166 7.90237 14.6834 8.2929 14.2929C8.68342 13.9024 9.31659 13.9024 9.70711 14.2929L11.7071 16.2929C12.0976 16.6834 12.0976 17.3166 11.7071 17.7071L9.70711 19.7071C9.31659 20.0976 8.68342 20.0976 8.2929 19.7071C7.90237 19.3166 7.90237 18.6834 8.2929 18.2929L8.61115 17.977C8.40861 17.9923 8.20478 18 8 18C3.7687 18 0.288864 14.7094 0.0166672 10.5105L0.00420417 10.2575L0.00014515 10.0169C-0.00916886 9.46466 0.430932 9.00946 0.983138 9.00014ZM7.70711 0.292893C8.06759 0.653377 8.09532 1.22061 7.7903 1.6129L7.70711 1.70711L7.38917 2.02302C7.59161 2.00771 7.79533 2 8 2C12.4183 2 16 5.58172 16 10C16 10.5523 15.5523 11 15 11C14.4477 11 14 10.5523 14 10C14 6.68629 11.3137 4 8 4C7.81294 4 7.62712 4.00853 7.44295 4.02545L7.70711 4.29289C8.09763 4.68342 8.09763 5.31658 7.70711 5.70711C7.34663 6.06759 6.77939 6.09532 6.3871 5.7903L6.2929 5.70711L4.2929 3.70711C3.93241 3.34662 3.90468 2.77939 4.20971 2.3871L4.2929 2.29289L6.2929 0.292893C6.68342 -0.0976311 7.31659 -0.0976311 7.70711 0.292893Z"
-                            fill="#0E4194" />
-                    </svg>
-                </button>
+                    <div class="personal__block user__data__container flex">
+                        <div class="personal__user__avatar">
+                            <img src="/static/images/avatar.png" alt="Аватар" />
+                            <span class="personal__user__percent__value">0%</span>
+                        </div>
+
+                        <div class="personal__about__user__container flex">
+                            <div class="personal__about__user__block__inf flex column">
+                                <div class="personal__about__user__card flex column">
+                                    <span class="personal__about__user__card__title desk__mini">
+                                        Статус:
+                                    </span>
+
+                                    <span class="personal__about__user__data__value">
+                                        Новичок
+                                    </span>
+                                </div>
+
+                                <div class="personal__about__user__card flex column">
+                                <span class="personal__about__user__card__title desk__mini">
+                                    Начисление с заказа:
+                                </span>
+
+                                <span class="personal__about__user__data__value">
+                                    0 %
+                                </span>
+                            </div>
+                            </div>
+
+                            <div class="personal__about__user__block__inf flex column">
+                                <div class="personal__about__user__card flex column">
+                                    <span class="personal__about__user__card__title desk__mini">
+                                        Бонусный счет:
+                                    </span>
+
+                                    <span class="personal__about__user__data__value">
+                                        0 руб
+                                    </span>
+                                </div>
+
+                                <div class="personal__about__user__card flex column">
+                                <span class="personal__about__user__card__title desk__mini">
+                                    Сумма заказов:
+                                </span>
+
+                                <span class="personal__about__user__data__value">
+                                    0 руб
+                                </span>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="about__bonuses__button text__uppercase flex align__center justify__center">
+                        Как получить бонусы
+                    </a>
+                </div>
             </div>
         </div>
     </main>
